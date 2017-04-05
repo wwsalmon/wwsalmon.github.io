@@ -5,6 +5,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    background-color: #222223;
 }
 
 a{
@@ -17,11 +18,16 @@ a{
     height: 48px;
 }
 
+.page-section{
+  padding-top: 128px;
+  color: #fff;
+  min-height: 400px;
+}
+
 #hero {
     width: 100%;
     display: block;
     height: 100vh;
-    background-color: #222;
     color: #fff;
 }
 
@@ -52,16 +58,84 @@ a{
 }
 
 #main-picture{
-  width: 400px;
-  display: inline-block;
-  position: relative;
-  margin-left: 128px;
-  top: 250px;
-  transform: translateY(-50%);
+  width: 500px;
+  right: 64px;
+  top: 52vh;
+  position: absolute;
 }
 
 #main-picture img{
   width: 100%;
+}
+
+.section-title{
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Rubik';
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-inner{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-body{
+  font-size: 20px;
+  font-family: 'Rubik';
+  line-height: 1.68;
+}
+
+.timeline-line{
+  border-top: 1px solid #fff;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#timeline-container{
+  width: calc(100% - 256px);
+  margin: 0 128px;
+  overflow-x: scroll;
+}
+
+.timeline-inner{
+  width: 200vw;
+}
+
+.body-table{
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.body-table table{
+  width: 100%;
+}
+
+.body-table td{
+  height: 100px;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 50%;
+  border: 1px solid #fff;
+  margin: 0;
+}
+
+.body-image{
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.body-image img{
+  width: 100%;
+  box-shadow: 0px 0px 24px 2px rgba(0,0,0,1);
+}
+
+.noshadow{
+  box-shadow: none!important;
 }
 
 .logo {
