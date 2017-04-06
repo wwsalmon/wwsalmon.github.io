@@ -220,6 +220,18 @@ a{
     letter-spacing: 6px;
 }
 
+#workscited{
+  padding: 256px 0;
+  background-color: #101319;
+  box-shadow: inset 0px 0px 204px -6px rgba(0,0,0,0.75);
+  text-align: center;
+}
+
+#workscited .section-inner .section-body span a{
+  color: #bbb;
+  text-decoration: underline;
+}
+
 #footer{
   width: 100%;
   background-color: #252B3A;
