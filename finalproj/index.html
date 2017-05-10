@@ -1,0 +1,53 @@
+<html>
+<head>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|PT+Serif:400,400i,700,700i|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.overlay-button').click(function() {
+			$(".overlay").css({"display": "none"});
+			$(".navbar").css({"visibility": "visible"});
+			$("body").css({"border": "solid 0 #fff"});
+	});
+	});
+	</script>
+</head>
+<body>
+	<div class='overlay'>
+		<div class='overlay-inner'>
+			<div class='overlay-title'>
+				<span>Explore</span><br/>
+				<span class='russia'>Russia</span>
+			</div>
+			<div class='overlay-button'><span>Click on this sentence to start exploring.</span></div>
+		</div>
+	</div>
+	<div class='navbar'>
+		<div class='navbar-inner'>
+			<div class='navbar-title'><span>Explore Russia</span></div>
+			<div class='navbar-author'><span>A project by Samson Zhang</span></div>
+		</div>
+	</div>
+	<div class='main'>
+		<div class='section-wrapper'>
+			<div class='wrapper wrapper-left'>
+				<div class='section' id='putin-bear' nonclick="javascript:location.href='putin.html'">
+					<div class='section-title'><span>Click for more about Russian wildlife.</span></div>
+				</div>
+				<div class='section' id='t-34'>
+					<div class='section-title'><span>Click for more about Russian tanks.</span></div>
+				</div>
+			</div>
+			<div class='wrapper wrapper-right'>
+				<div class='section' id='putin-winter'>
+					<div class='section-title'><span>Click for more about Vladmir Putin.</span></div>
+				</div>
+				<div class='section' id='submarine'>
+					<div class='section-title'><span>Click for more about Russian submarines.</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
