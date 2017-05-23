@@ -1,11 +1,46 @@
 <html>
 <head>
   <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
-  <link href='css/style.css' type='text/css' rel='stylesheet'/>
+  <link href='style.css' type='text/css' rel='stylesheet'/>
   <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet"/>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+  <script src="jquery.mousewheel.js"></script>
+	<script>
+	$(function(){
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 40);
+			event.preventDefault();
+		});
+	});
+	</script>
 </head>
 <body>
-  <p>Video Portfolio Page</p>
+  <!--VIDEO PORTFOLIO HOMEPAGE-->
+  <div class='sidebar'>
+
+  </div>
+  <div class='home-main'>
+    <div class='content-outer'>
+      <div class='content-column'>
+          <img class='inner-column project-cover' src='cover-art-master.jpg'>
+      </div>
+      <div class='content-column'>
+          <img class='inner-column project-cover' src='cover-art-master.jpg'>
+      </div>
+      <div class='content-column'>
+        <div class='content-row'>
+          <div class='project-container' id='robotics1'>
+
+          </div>
+        </div>
+        <div class='content-row'>
+          <div class='project-explainer' id='robotics1-exp'>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
