@@ -5,6 +5,24 @@ body{
   background-color: #f6f6f6;
   font-size: 20px;
   color: #222;
+  font-family: 'Rubik';
+}
+
+.scroll-down{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.scroll-down-arrow{
+  width: 0;
+  height: 0;
+  border-top: 8px solid #222;
+  border-bottom: 8px solid transparent;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  margin: 32px auto;
 }
 
 .hero-text-outer{
@@ -32,9 +50,9 @@ body{
 }
 
 .hero-name{
-  font-weight: 700;
   line-height: 1.0;
   font-size: 96px;
+  font-family: 'Fredericka the Great';
 }
 
 .hero-subline{
@@ -54,5 +72,19 @@ body{
 
 .hero-item-highlight{
   color: #222;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.home-section{
+  min-height: 200px;
+}
+
+.section-inner{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.project-cover{
+  width: 100%;
+  padding: 32px 0;
 }
