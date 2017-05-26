@@ -3,15 +3,56 @@
 body{
   margin: 0;
   background-color: #f6f6f6;
+  font-size: 20px;
+  color: #222;
+}
+
+.hero-text-outer{
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero-text-left ,.hero-text-right{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-text-left{
+  left: 64px;
+}
+
+.hero-text-right{
+  right: 64px;
+  padding-left: 440px;
+  text-align: right;
+  font-family: 'Rubik';
+}
+
+.hero-name{
+  font-weight: 700;
+  line-height: 1.0;
+  font-size: 96px;
+}
+
+.hero-subline{
+  padding-top: 32px;
+  margin-top: 48px;
+  border-top: 1px solid #222;
+  font-weight: 400;
+  display: inline-block;
 }
 
 .hero-item{
-  font-size: 100px;
+  font-size: 48px;
   color: #ddd;
-  font-family: 'Barrio';
-  display: inline-block;
+  display: block;
+  font-family: 'Fredericka the Great';
 }
 
 .hero-item-highlight{
   color: #222;
+  font-weight: 700;
 }
