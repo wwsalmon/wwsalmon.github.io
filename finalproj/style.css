@@ -268,7 +268,18 @@ body{
 }
 
 .page-content h2{
+	margin-top: 86px;
 	text-align: center;
+}
+
+.page-content img{
+	width: 100%;
+	margin: 64px 0;
+}
+
+.page-content p{
+	width: 600px;
+	margin: 32px auto;
 }
 
 .header-content{
@@ -288,10 +299,17 @@ body{
 	letter-spacing: 8px;
 }
 
-#putin-header{
-	background-image: url("putin3.jpg");
+.page-header{
 	background-size: cover;
 	background-position: center center;
+}
+
+#putin-header{
+	background-image: url("putin3.jpg");
+}
+
+#tank-header{
+	background-image: url("t34-2.jpg");
 }
 
 .fadein{
