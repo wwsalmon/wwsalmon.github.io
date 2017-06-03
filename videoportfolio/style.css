@@ -79,7 +79,6 @@ a.deactivated{
   right: 64px;
   padding-left: 440px;
   text-align: right;
-  font-family: 'Rubik';
 }
 
 .hero-name{
@@ -89,11 +88,15 @@ a.deactivated{
 }
 
 .hero-subline{
-  padding-top: 32px;
-  margin-top: 48px;
-  border-top: 1px solid #222;
+  padding-top: 24px;
+  margin-top: 40px;
+  border-top: 1px solid #666;
   font-weight: 400;
   display: inline-block;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
 .hero-item{
@@ -143,18 +146,32 @@ a.deactivated{
 
 .project-cover-outer{
   position: relative;
-  margin: 32px 0;
+  margin: 128px 0;
   overflow: hidden;
+  cursor: pointer;
 }
+
+.project-cover-outer:nth-of-type(4n-2){
+  left: -64px;
+}
+
+.project-cover-outer:nth-of-type(2n+1){
+  left: 64px;
+}
+
+ .project-cover-outer:nth-of-type(4n){
+   left: 192px;
+ }
 
 .project-cover{
   width: 100%;
   transition: all 0.5s ease;
+  z-index: 600;
 }
 
 .project-cover-outer:hover > .project-cover-hover{
-  top: 0;
   transition: all 0.5s ease;
+  clip: rect(0,1000px,563px,0);
 }
 
 .project-cover-outer:hover > .project-cover{
@@ -166,9 +183,69 @@ a.deactivated{
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 100%;
+  clip: rect(563px,1000px,563px,0);
   left: 0;
+  top: 0;
   background-color: #f6f6f6;
+  background-size: 1000px;
+  background-position: center 0%;
+  z-index: 800;
+}
+
+.project-hover-message{
+  color: #222;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 32px;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  height: 86px;
+  justify-content: stretch;
+}
+
+.project-message-left{
+  width: 200px;
+  line-height: 1.0;
+}
+
+.project-message-arrow{
+  background-color: #f6f6f6;
+  padding-left: 16px;
+}
+
+.project-message-arrow i{
+  line-height: 86px;
+}
+
+.project-message-sub{
+  display: inline-block;
+  background-color: #f6f6f6;
+  height: 43px;
+  margin: 0;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.project-message-sub:first-of-type{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.project-message-sub:last-of-type{
+  padding-top: 5px;
+}
+
+#fallen-hover{
+  background-image: url("project-covers/fallen-base-4.jpg");
+}
+
+#sony-hover{
+  background-image: url("project-covers/sonyxb950bt-base.jpg");
 }
 
 .project-cover-column{
