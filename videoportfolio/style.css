@@ -2,23 +2,16 @@
 
 body{
   margin: 0;
-  background-color: #f6f6f6;
+  background-color: #fff;
   font-size: 20px;
   color: #222;
   font-family: 'Rubik';
   line-height: 1.6;
 }
 
-.navbar{
-  position: absolute;
-  top: 32px;
-  left: 32px;
-}
-
 a{
   text-decoration: none;
-  border-bottom: 2px solid blue;
-  color: blue;
+  color: unset;
 }
 
 a.deactivated{
@@ -31,6 +24,65 @@ a.deactivated{
 .fa{
   font-family: 'FontAwesome'!important;
 }
+
+/* NAVBAR */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  line-height: 64px;
+  align-content: stretch;
+}
+
+.navbar-dark{
+  color: #222;
+}
+
+.navbar-light{
+  color: #fff;
+}
+
+.title-name{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 22px;
+  font-weight: 400;
+}
+
+.navbar-right{
+  margin-left: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+.navbar-item{
+  transition: all 0.2s ease;
+  padding: 0 16px;
+  border-bottom: none;
+}
+
+.navbar-dark .navbar-item:hover{
+  border-bottom: 2px solid #222;
+}
+
+.navbar-light .navbar-item:hover{
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-item:hover{
+  transition: all 0.2s ease;
+}
+
+/* HOME HERO */
 
 .scroll-down{
   position: absolute;
@@ -56,6 +108,10 @@ a.deactivated{
   40%{opacity: 1;}
   60%{top: 8px; opacity: 0;}
   100%{top: 8px; opacity: 0;}
+}
+
+.home-hero{
+  background-color: #f0f0f0;
 }
 
 .hero-text-outer{
@@ -124,6 +180,12 @@ a.deactivated{
   margin: 0 auto;
 }
 
+.section-wide{
+  width: 700px;
+  position: relative;
+  left: 156px;
+}
+
 .section-note{
   width: 600px;
   margin: 64px auto;
@@ -143,6 +205,8 @@ a.deactivated{
   line-height: 64px;
   font-family: 'Fredericka the Great';
 }
+
+/* HOMEPAGE PROJECT SECTION */
 
 .project-cover-outer{
   position: relative;
@@ -186,7 +250,7 @@ a.deactivated{
   clip: rect(563px,1000px,563px,0);
   left: 0;
   top: 0;
-  background-color: #f6f6f6;
+  background-color: #fff;
   background-size: 1000px;
   background-position: center 0%;
   z-index: 800;
@@ -214,7 +278,7 @@ a.deactivated{
 }
 
 .project-message-arrow{
-  background-color: #f6f6f6;
+  background-color: #fff;
   padding-left: 16px;
 }
 
@@ -224,7 +288,7 @@ a.deactivated{
 
 .project-message-sub{
   display: inline-block;
-  background-color: #f6f6f6;
+  background-color: #fff;
   height: 43px;
   margin: 0;
   padding-left: 10px;
@@ -248,123 +312,7 @@ a.deactivated{
   background-image: url("project-covers/sonyxb950bt-base.jpg");
 }
 
-.project-cover-column{
-  padding: 0 16px;
-  height: 100%;
-  display: inline-block;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.project-cover-left{
-  width: 33%;
-  padding-top: 32px;
-}
-
-.project-cover-right{
-  width: 66%;
-}
-
-.project-cover-right-inner{
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.project-cover-right-bottom{
-  width: 100%;
-  padding-top: 32px;
-  display: flex;
-  flex-direction: row;
-  height: calc(100% - 256px);
-  position: relative;
-}
-
-
-.project-cover-outer h1{
-  margin-bottom: 8px;
-  font-family: 'Fredericka the Great';
-  font-weight: 400;
-  color: #000;
-  font-size: 50px;
-}
-
-.project-cover-outer p{
-  margin-top: 0;
-}
-
-.project-cover-column img{
-  width: 100%;
-}
-
-.project-cover-outer .subtitle{
-  line-height: 1.3;
-}
-
-.project-cover-subcolumn:nth-of-type(1){
-  border-right: 1px solid #ddd;
-  padding-right: 20px;
-}
-
-.project-cover-subcolumn:nth-of-type(2){
-  padding-left: 20px;
-  line-height: 1.3;
-}
-
-.project-cover-subcolumn{
-  box-sizing: border-box;
-  display: inline-block;
-  flex: 0 0 49%;
-}
-
-.project-cover-button{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 14px;
-  border: 2px solid #222;
-  background-color: #222;
-  color: #fff;
-  z-index: 999;
-}
-
-.project-cover-button:hover{
-  border: 2px solid #999;
-  background-color: #333;
-}
-
-.project-cover-tools{
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.project-tool-item{
-  width: 48px;
-  height: 48px;
-  margin: 4px;
-}
-
-.app-icon{
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 48px;
-  color: #000;
-}
-
-.project-tool-item img{
-  width: 100%;
-}
-
-.adobe{
-  font-family: 'Fredericka the Great';
-  font-size: 24px;
-  border: 1px dotted #666;
-}
-
-.sony{
-  font-family: 'Open Sans';
-  font-size: 16px;
-}
+/* ABOUT */
 
 .about-header-outer{
   text-align: center;
@@ -401,3 +349,275 @@ a.deactivated{
   margin: 0 auto;
   padding: 64px 0;
 }
+
+/* PROJECT HERO */
+
+.project-hero{
+  width: 100%;
+  min-height: 800px;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+#sony-hero{
+  background-image: url("sony-xb950-review/screen-1.jpg");
+}
+
+#fallen-hero{
+  background-image: url("fallen-short-film/screen-2.jpg");
+}
+
+.project-section{
+  width: 100%;
+  min-height: 200px;
+  padding-bottom: 128px;
+}
+
+.project-section p{
+  max-width: 700px;
+  margin: 32px auto;
+}
+
+.project-section h1{
+  margin: 128px 0 16px 0;
+  font-size: 64px;
+}
+
+.project-section h1, .project-section h2{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.project-section h2{
+  margin: 128px 0 32px 0;
+  font-size: 42px;
+}
+
+.project-section a{
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.project-subline{
+  text-align: center;
+  color: #666;
+  margin-bottom: 64px;
+}
+
+.project-youtube{
+  box-shadow: 0 0 24px 2px rgba(0,0,0,0.5);
+  width: 1000px;
+  height: 562px;
+}
+
+.project-buffer{
+  width: 100%;
+  height: 32px;
+}
+
+/* TOOLS GRAPHIC */
+
+.project-tools{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-tool-item{
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.project-tool-title{
+  line-height: 1.1;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.project-tool-subtitle{
+  line-height: 1.1;
+}
+
+.project-tool-picture{
+  width: 100%;
+  height: 218px;
+  padding-bottom: 32px;
+}
+
+.project-tool-picture img{
+  width: 100%;
+}
+
+.app-icon{
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 48px;
+  width: 50px;
+  color: #000;
+}
+
+.adobe{
+  font-family: 'Fredericka the Great';
+  font-size: 24px;
+  border: 1px dotted #666;
+}
+
+.sony{
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+/* CALENDAR */
+
+.calendar{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -360px;
+}
+
+.calendar h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.calendar table{
+  border-collapse: collapse;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  padding: 4px;
+  color: #bbb;
+}
+
+.calendar td{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.day-start, .day-idea, .day-pre, .day-strbd, .day-prod, .day-post, .day-end{
+  color: #fff;
+}
+
+.day-start{
+  background-color: #adf0ff;
+}
+
+.day-strbd-full{
+  background-color: #0098d2;
+}
+
+.day-strbd-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #0098d2;
+  border-right: 20px solid #0098d2;
+  border-left: 20px solid #56caf6;
+  border-top: 20px solid #56caf6;
+}
+
+.day-post-full{
+  background-color: #222;
+}
+
+.day-post-back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #222;
+  border-right: 20px solid #222;
+  border-left: 20px solid #F24C0D;
+  border-top: 20px solid #F24C0D;
+}
+
+.day-pre{
+  background-color: #56caf6;
+}
+
+.day-prod{
+  background-color: #F24C0D;
+}
+
+.day-idea{
+  background-color: #14A0BE;
+}
+
+.day-end{
+  background-color: #F58155;
+}
+
+.row-weekdays{
+  background-color: #f6f6f6;
+}
+
+.calendar-key{
+  margin-top: 32px;
+}
+
+.calendar-key-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.calendar-key-color{
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+}
+
+.day-idea, .day-pre-ov, .day-strbd, .day-prod-ov, .day-post-ov{
+  background-color: unset;
+  color: unset;
+}
+
+.day-strbd-back, .day-post-back{
+  display: none;
+}
+
+/* .day-post-ov{
+  background-color: #000!important;
+  color: #fff!important;
+}
+
+*/
+
+.day-pre-ov{
+  background-color: #56caf6!important;
+  color: #fff!important;
+}
+
+/*
+
+.day-prod-ov{
+  background-color: #F24C0D!important;
+  color: #fff!important;
+}
+
+.day-idea-ov{
+  background-color: #14A0BE!important;
+  color: #fff!important;
+}
+
+.day-strbd{
+  background-color: #0098d2!important;
+  color: #fff!important;
+}
+
+*/
