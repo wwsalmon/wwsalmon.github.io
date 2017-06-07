@@ -88,7 +88,7 @@ a.deactivated{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 16px;
 }
 
 .scroll-down-arrow{
@@ -204,6 +204,34 @@ a.deactivated{
   font-size: 48px;
   line-height: 64px;
   font-family: 'Fredericka the Great';
+}
+
+/* HOME ABOUT SECTION */
+
+.home-about-section{
+  background-color: #222;
+  color: #fff;
+  padding: 128px 0;
+}
+
+.home-about-section p{
+  margin: 32px 0;
+}
+
+.home-about-section img{
+  width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 32px;
+}
+
+.home-about-section .section-inner{
+  width: 600px;
+}
+
+.home-about-section .scroll-down-arrow{
+  border-top-color: #fff;
 }
 
 /* HOMEPAGE PROJECT SECTION */
@@ -396,9 +424,19 @@ a.deactivated{
   font-size: 42px;
 }
 
-.project-section a{
-  color: blue;
-  border-bottom: 2px solid blue;
+.project-section h3{
+  margin-top: 128px;
+  font-size: 30px;
+}
+
+.project-section h4{
+  color: #666;
+  margin-top: 64px;
+}
+
+.project-section a, .home-about-section a{
+  color: #0080FF;
+  border-bottom: 2px solid #0080FF;
 }
 
 .project-subline{
@@ -476,13 +514,11 @@ a.deactivated{
 .calendar{
   display: inline-block;
   position: absolute;
-  top: 0;
   left: -360px;
 }
 
 .calendar h3{
   text-align: center;
-  font-size: 30px;
 }
 
 .calendar table{
@@ -582,12 +618,12 @@ a.deactivated{
   margin-right: 16px;
 }
 
-.day-idea, .day-pre-ov, .day-strbd, .day-prod-ov, .day-post-ov{
+.partial-calendar .day-idea, .partial-calendar .day-pre-ov, .partial-calendar .day-strbd, .partial-calendar .day-prod-ov, .partial-calendar .day-post-ov{
   background-color: unset;
   color: unset;
 }
 
-.day-strbd-back, .day-post-back{
+.partial-calendar .day-strbd-back, .partial-calendar .day-post-back{
   display: none;
 }
 
@@ -598,7 +634,7 @@ a.deactivated{
 
 */
 
-.day-pre-ov{
+.pre-calendar .day-pre-ov{
   background-color: #56caf6!important;
   color: #fff!important;
 }
