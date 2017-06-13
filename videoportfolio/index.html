@@ -12,13 +12,25 @@
 </head>
 <body>
   <div class='navbar navbar-dark'>
-    <a href=''><div class='title-name'><span>Samson Zhang</span><span style='opacity: 0.5;'> | Video Portfolio</span></div></a>
+    <a href='index.html'><div class='title-name'><span>Samson Zhang</span><span style='opacity: 0.5;'> | Video Portfolio</span></div></a>
     <div class='navbar-right'>
       <a href='index.html'><div class='navbar-item'><span>Home</span></div></a>
       <a href='about/index.html'><div class='navbar-item'><span>About</span></div></a>
+      <div class='navbar-item navbar-item-dropdown'><span>Projects</span></div>
+      <div class='navbar-dropdown-outer'>
+        <div class='navbar-dropdown-triangle'></div>
+        <div class='navbar-dropdown-inner'>
+          <a href='fallen-short-film/index.html'><div class='navbar-dropdown-item'><span>Fallen</span></div></a>
+          <a href='sony-xb950-review/index.html'><div class='navbar-dropdown-item'><span>Sony XB950 Review</span></div></a>
+          <a href='2-train-chairmans/index.html'><div class='navbar-dropdown-item'><span>Chairman's Video</span></div></a>
+          <a href=''><div class='navbar-dropdown-item'><span>2 Train Documentary</span></div></a>
+        </div>
+      </div>
     </div>
   </div>
+
   <!--VIDEO PORTFOLIO HOMEPAGE-->
+
   <div class='home-hero'>
     <div class='hero-text-outer'>
       <div class='hero-text-left'>
@@ -54,7 +66,7 @@
       <img src='no-back-sam.png'/>
       <p>Four years ago, my friends and I sawed an old apple crate in half, attached it to the legs of an old telescope, and made a tripod for my old iPad. That's how my passion for filmmaking started.</p>
       <p>Since then, I have made three narrative short films, multiple documentary/promotional films as the media director for my robotics team, and have experience with color grading, sound design, and visual effects in Premiere Pro and After Effects.</p>
-      <p style='text-align: center;'><a href='about/index.html'>More About Me</a></p>
+      <p style='text-align: center;'><a href='about/index.html'>More About My Story</a></p>
       <p style='text-align: center;'><span style='border-bottom: 2px solid #fff;'>Scroll to see my projects</span></p>
       <div class='scroll-down-arrow'></div>
     </div>
@@ -111,7 +123,7 @@
 
       <div class='project-cover-outer'>
         <img class='project-cover' src='project-covers/2trainchairmans.jpg'/>
-        <div class='project-cover-hover'>
+        <div class='project-cover-hover' id='chairmans-hover' onclick="javascript:location.href='2-train-chairmans/index.html'">
           <div class='project-hover-message'>
             <div class='project-message-left'>
               <div class='project-message-sub'><span>More about</span></div>
@@ -134,16 +146,16 @@
 
   $(window).scroll(function(){
     if($(window).scrollTop() < (topofDiv)){
-      $(".navbar").css("color", "#222");
-      $(".navbar-item").css("border-color", "#222");
+      $(".navbar").addClass("navbar-dark");
+      $(".navbar").removeClass("navbar-light");
     }
     else if($(window).scrollTop() < (topofDiv + height)){
-      $(".navbar").css("color", "#fff");
-      $(".navbar-item").css("border-color", "#fff");
+      $(".navbar").addClass("navbar-light");
+      $(".navbar").removeClass("navbar-dark");
     }
     else{
-      $(".navbar").css("color", "#222");
-      $(".navbar-item").css("border-color", "#222");
+      $(".navbar").addClass("navbar-dark");
+      $(".navbar").removeClass("navbar-light");
     }
   });
   </script>
