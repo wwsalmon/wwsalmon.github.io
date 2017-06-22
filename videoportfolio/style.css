@@ -430,6 +430,10 @@ a.deactivated{
   background-position: center center;
 }
 
+#recap-hover{
+  background-image: url("project-covers/2trainrecap-wide.jpeg");
+}
+
 /* ABOUT */
 
 .about-header-outer{
@@ -532,8 +536,13 @@ a.deactivated{
 }
 
 .project-section h3{
+  text-align: center;
   margin-top: 128px;
   font-size: 30px;
+}
+
+.section-wide h3{
+  text-align: left;
 }
 
 .project-section h4{
@@ -556,11 +565,19 @@ a.deactivated{
   box-shadow: 0 0 24px 2px rgba(0,0,0,0.5);
   width: 1000px;
   height: 562px;
+  margin: 32px 0;
 }
 
 .project-buffer{
   width: 100%;
   height: 32px;
+}
+
+.project-divider{
+  width: 200px;
+  height: 2px;
+  background-color: #666;
+  margin: 128px auto 64px auto;
 }
 
 /* TOOLS GRAPHIC */
@@ -624,6 +641,23 @@ a.deactivated{
 .sony{
   font-family: 'Open Sans';
   font-size: 16px;
+}
+
+ul.contents{
+  width: 300px;
+  margin: 32px auto;
+  padding: 32px 64px;
+  border: 1px dashed #666;
+  list-style: none;
+  text-align: center;
+}
+
+.contents li{
+  padding: 16px 0;
+}
+
+.contents li:hover{
+  background-color: #f6f6f6;
 }
 
 /* CALENDAR */
@@ -774,3 +808,74 @@ a.deactivated{
 }
 
 */
+
+/* SLIDESHOW */
+
+.slides-container{
+  position: relative;
+  margin: 32px 0;
+  background-color: #fff;
+}
+
+.slides-placeholder{
+  visibility: hidden;
+}
+
+.slides-main{
+  position: absolute;
+  top: 0;
+}
+
+.slides-main img, img.slides-placeholder{
+  margin: 0!important;
+}
+
+.slides-menu{
+  width: 100%;
+  height: 200px;
+  overflow-x: auto;
+  padding: 24px 0;
+}
+
+.slides-menu-inner{
+  position: relative;
+  height: 100%;
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+
+.slides-picker-outer{
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  transition: all 0.2s ease;
+}
+
+img.slides-picker{
+  width: unset;
+  height: 100%;
+  margin: 0;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.slides-nav{
+  width: 42px;
+  height: 80px;
+  position: absolute;
+  bottom: 84px;
+  background-color: #fff;
+  box-shadow: 0 0 6px 1px rgba(0,0,0,0.1);
+  z-index: 999;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.slides-back{
+  left: -16px;
+}
+
+.slides-next{
+  right: -16px;
+}
