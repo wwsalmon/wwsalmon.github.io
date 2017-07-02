@@ -103,12 +103,10 @@
 
   $(window).scroll(function(){
     if($(window).scrollTop() > (topofDiv + height)){
-      $(".navbar").css("color", "#222");
-      $(".navbar-item").css("border-color", "#222");
+      $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
     }
     else{
-      $(".navbar").css("color", "#fff");
-      $(".navbar-item").css("border-color", "#fff");
+      $(".navbar").addClass("navbar-light").removeClass("navbar-dark");
     }
   });
   </script>

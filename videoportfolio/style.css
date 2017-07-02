@@ -555,6 +555,10 @@ p.about-body-quote{
   background-color: #451e3e;
 }
 
+.about-body-color-sept{
+  background-color: #960000;
+}
+
 /* PROJECT HERO */
 
 .project-hero{
@@ -583,7 +587,7 @@ p.about-body-quote{
   padding-bottom: 128px;
 }
 
-.project-section p{
+.project-section p, .project-section ul, .project-section ol{
   max-width: 700px;
   margin: 32px auto;
 }

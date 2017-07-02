@@ -61,8 +61,27 @@
       <div class='huge-title'><span>Two </span><span style='opacity:0.6;'>Years </span><span style='opacity:0.2;'>Ago</span></div>
       <div class='header-image'><iframe class='project-youtube' id="ytplayer" type="text/html" src="https://www.youtube.com/embed/TYpNTePrjcI" frameborder="0"></iframe></div>
       <p>I have always loved computers and technology. Two years ago, when my family got a new Dell XPS 13, I decided to make a review video for it. The video hit more than 20,000 views and kicked off my tech YouTube channel.</p>
-      <p>My YouTube channel has been my way to experiment and improve my videography skills in the past few years. It gives my videos an audience that provides feedback and motivation to keep going. It also lets me learn more about and discover</p>
+      <p>My YouTube channel has been my way to experiment and improve my videography skills in the past few years. It gives my videos an audience that provides feedback and motivation to keep going. It also lets me learn more about things and products that I love and use every day and share it with the world.</p>
+    </div>
+    <div class='about-body-color about-body-color-sept'>
+      <div class='huge-title'><span>Sept </span><span style='opacity:0.6;'>Ember </span><span style='opacity:0.2;'>2017</span></div>
+      <div class='header-image'><img src='about-pic-2.jpg'/></div>
+      <p>I have always loved computers and technology. Two years ago, when my family got a new Dell XPS 13, I decided to make a review video for it. The video hit more than 20,000 views and kicked off my tech YouTube channel.</p>
+      <p>My YouTube channel has been my way to experiment and improve my videography skills in the past few years. It gives my videos an audience that provides feedback and motivation to keep going. It also lets me learn more about things and products that I love and use every day and share it with the world.</p>
     </div>
   </div>
+  <script type="text/javascript">
+  var topofDiv = $(".about-header-outer").offset().top;
+  var height = $(".about-header-outer").outerHeight();
+
+  $(window).scroll(function(){
+    if($(window).scrollTop() > (topofDiv + height)){
+      $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
+    }
+    else{
+      $(".navbar").addClass("navbar-light").removeClass("navbar-dark");
+    }
+  });
+  </script>
 </body>
 </html>
