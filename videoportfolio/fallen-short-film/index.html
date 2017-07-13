@@ -64,7 +64,7 @@
           <div class='project-tool-subtitle'><span>Shotgun Mic</span></div>
         </div>
         <div class='project-tool-item'>
-          <div class='project-tool-picture'><img src='../tools/premierepro2.png'></div>
+          <div class='project-tool-picture'><img src='../tools/premierepro2.PNG'></div>
           <div class='project-tool-title'><span>Premiere Pro and After Effects</span></div>
           <div class='project-tool-subtitle'><span>Visual Effects/Editing</span></div>
         </div>
@@ -133,7 +133,7 @@
             <td class='day-post-ov day-post-full'>22</td>
             <td class='day-post-ov day-prod-ov day-post'>23<div class='day-post-back'></div></td>
             <td class='day-end'>24</td>
-            <td>25</td>
+            <td class='day-remaster'>25</td>
             <td>26</td>
             <td>27</td>
           </tr>
@@ -153,7 +153,8 @@
           <div class='calendar-key-item'><div class='calendar-key-color day-strbd-full'></div><div><span>Storyboarding</span></div></div>
           <div class='calendar-key-item'><div class='calendar-key-color day-prod'></div><div><span>Production</span></div></div>
           <div class='calendar-key-item'><div class='calendar-key-color day-post-full'></div><div><span>Post-Production</span></div></div>
-          <div class='calendar-key-item'><div class='calendar-key-color day-end'></div><div><span>Project Due</span></div></div>
+          <div class='calendar-key-item'><div class='calendar-key-color day-end'></div><div><span>Initial Project Due</span></div></div>
+          <div class='calendar-key-item'><div class='calendar-key-color day-remaster'></div><div><span>Remastering (Post)</span></div></div>
         </div>
       </div>
       <h3 id='fallen-section-introduction'>Introduction</h3>
@@ -179,7 +180,7 @@
       <p>The Protagonist of Fallen is Amogh, a high school student who just wants good grades. After acquiring mind-reading powers, he at first uses them to achieve his goals, cheating on tests and in class for good grades. However, after the powers overwhelm him, he wants them removed, and finds out that he does best without the aid of his powers.</p>
       <p>The Antagonist of Fallen is Haroon, a high school student in a medical internship who is somewhat narrow-minded but wants wealth and fame in his career and life. At first, his character develops as lazy and nonchalant, but then puts full effort into researching Amogh's mind reading powers (and nothing else). At first, this is to help him, but then he turns manipulative and lies to Amogh for his own experiments. At the end, his glorification of his own manipulative deeds leads to Amogh outsmarting him and calling for help, leading to Haroon's fall.</p>
       <p>In addition to these character arcs, I tried to write the plot according to the Hero's Journey story structure as well as using the idea of symmetry in story circles to work out pacing and plot points.</p>
-      <img src='fallen-storystructure.png'/>
+      <img src='fallen-storystructure.PNG'/>
       <p>The final script was written in a program called Trelby, and ended up being more than 35 pages long. Even then, many changes and improvisations were made between the script and the final film, including added scenes and completely changed dialogue.</p>
       <img src='scripts-overview.png'/>
       <p>In retrospect, neither the character nor story arcs were perfect, and they definitely could have been paced and written better. I was especially dissatisfied with the resolution of conflict between Amogh and Haroon, with it ending in a weak stalement rather than anything strong, but given the amount of time we had to figure out our plot and all the changes we had to make I felt our plot turned into a relatively structured and decently paced 24-minute film.</p>
@@ -300,7 +301,7 @@
       <img src='schedule.jpg'/>
       <p>However, there was one scene in which we used controlled lighting with proper studio lights borrowed my school's broadcast club.</p>
       <img src='fallen-lighting-2.jpg'/>
-      <img src='fallen-lighting.png'/>
+      <img src='fallen-lighting.PNG'/>
       <p>Two lights were used in this scene: a key light and a back light. The key light creates most of the light that illuminates the side of Amogh's face and body, and the back light produces a nice rim/edge light effect.</p>
       <p>A fill light or bounce was not used to create the harshest shadows possible. (Also because we didn't have a third light or bounce on set, luckily it worked out.)</p>
       <p>I was happy with the final effect, which really helped to produce the eerie and intense atmosphere of the scene. Eventually, it became the base for the cover of the film.</p>
@@ -311,6 +312,12 @@
       <h4>Mind Reading</h4>
       <p>The mind reading effect was accomplished using 2D tracking points and 3D camera tracks in After Effects.</p>
       <iframe class='project-youtube' id="ytplayer" type="text/html" src="https://www.youtube.com/embed/AP2O_fHUH3I" frameborder="0"></iframe>
+      <p>3D tracks were used in the scene where Amogh was being overwhelmed by the thoughts during the make-up test. 3D tracking requires only one track, tracking the motion of the camera rather than the motion of a group of pixels. The track points look like this:</p>
+      <img src='fx-3-compressed.gif'/>
+      <p>Once we had track points, we could add animated text in 3D space and the tracked camera would do all the rest of the work.</p>
+      <img src='fx-2-lowres-compressed.gif'/>
+      <p>Although this was much faster and simpler than 2D tracks, the timeline was still a glorious, <strike>mess</strike> organized arrangement of text layers and opacity keyframes.</p>
+      <img src='fx-timeline.png'/>
 
       <h3 id='fallen-section-sound'>Sound Design</h3>
       <p>In Fallen, audio for most scenes were recorded with a Sennheiser MKE 600 shotgun microphone borrowed from my school's broadcast club. I planned to have it mounted to a boom pole to better isolate dialogue and audio; however, due to equipment and time restraints we ended up just mounting it to the top of my camera and recording to the built-in pre-amp.</p>
@@ -326,12 +333,57 @@
       <h3 id='fallen-section-color'>Color Grading</h3>
       <p>All of Fallen was shot in S-Log 2 on a Sony RX10 II. This produced an extremely flat and desaturated image, but with maximized dynamic range and potential for color grading.</p>
       <p>All color grading was done using the Lumetri color grader in Adobe Premiere Pro. For each shot, I pushed the contrast and adjusted shadows, highlights, saturation, etc. to close to Rec.709 color; I was able to push outdoor scenes the hardest and increase contrast the most because of abundant lighting. After this, I pushed most shots back to a more desaturated grade and added light Cinespace or film LUTs for stylistic effect.</p>
+      <div class="slides-container">
+        <img src="color-grading-1.jpg" class='slides-placeholder' onload="showDivs(1,$(this));">
+        <div class='slides-main'>
+          <img src="color-grading-1.jpg">
+        </div>
+        <div class='slides-main'>
+          <img src="color-grading-2.jpg">
+        </div>
+        <div class='slides-main'>
+          <img src="color-grading-3.jpg">
+        </div>
+        <div class='slides-main'>
+          <img src="color-grading-4.jpg">
+        </div>
+        <div class='slides-main'>
+          <img src="color-grading-5.jpg">
+        </div>
+        <div class='slides-back slides-nav'>
+          <span>&lt;</span>
+        </div>
+        <div class='slides-next slides-nav'>
+          <span>&gt;</span>
+        </div>
+        <div class='slides-menu'>
+          <div class='slides-menu-inner'>
+            <div class='slides-picker-outer'>
+              <img class="slides-picker" src="color-grading-1.jpg">
+            </div>
+            <div class='slides-picker-outer'>
+              <img class="slides-picker" src="color-grading-2.jpg">
+            </div>
+            <div class='slides-picker-outer'>
+              <img class="slides-picker" src="color-grading-3.jpg">
+            </div>
+            <div class='slides-picker-outer'>
+              <img class="slides-picker" src="color-grading-4.jpg">
+            </div>
+            <div class='slides-picker-outer'>
+              <img class="slides-picker" src="color-grading-5.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3 id='fallen-section-music'>Film Scoring</h3>
       <p>While editing the ending of Fallen, I thought that the lack of dialogue or strong visuals at the end made it feel lacking. Of course the ideal solution would be to replan and shoot a stronger visual and plot ending, but since we were out of time I thought we would compensate with music, in the same way that earlier I fixed an awkward opening by adding an establishing title shot.</p>
       <p>I knew I needed music, but didn't want to use other people's music, as it would both take a ton of time to find suiting music and I kind of wanted to score the film myself. As a result, both of the little pieces of music in Fallen were entirely composed and produced by me.</p>
       <p>Once day I was fooling around on my keyboard and thought that IV -> iv -> V7 -> I was a nice, cinematic progression into a cadence. So I recorded that with strings, added organs, added some bass, and overlayed some piano arpeggios over the whole thing. Then I made a light thing of piano notes building up to the cadence, mixed everything up a bit, and had my ending music. Nothing was ever written down, just some music theory and piano intuition.</p>
+      <img src='music.png'/>
       <p>After recording the bass for the main ending music, I improvised a simple little looping tune; with a bit of refinement, this became my credits music.</p>
+      <iframe class='project-soundcloud' scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/335123050&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
     </div>
   </div>

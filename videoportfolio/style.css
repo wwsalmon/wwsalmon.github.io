@@ -642,7 +642,7 @@ p.about-body-quote{
   margin-bottom: 64px;
 }
 
-.project-youtube{
+.project-youtube, .project-soundcloud{
   box-shadow: 0 0 24px 2px rgba(0,0,0,0.5);
   width: 1000px;
   height: 562px;
@@ -770,7 +770,7 @@ ul.contents{
   position: relative;
 }
 
-.day-start, .day-idea, .day-pre, .day-strbd, .day-prod, .day-post, .day-end{
+.day-start, .day-idea, .day-pre, .day-strbd, .day-prod, .day-post, .day-end, .day-remaster{
   color: #fff;
 }
 
@@ -826,6 +826,11 @@ ul.contents{
 
 .day-end{
   background-color: #F58155;
+}
+
+.day-remaster{
+  background-image: url("fallen-short-film/striped-back.png");
+  background-size: 100%;
 }
 
 .row-weekdays{
@@ -894,7 +899,7 @@ ul.contents{
 
 .slides-container{
   position: relative;
-  margin: 32px 0;
+  margin: 64px 0;
   background-color: #fff;
 }
 
