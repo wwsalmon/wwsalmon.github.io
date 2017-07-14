@@ -416,6 +416,10 @@ a.deactivated{
   padding-top: 5px;
 }
 
+#p6-hover{
+  background-image: url("project-covers/p6-base-compressed.gif");
+}
+
 #fallen-hover{
   background-image: url("project-covers/fallen-base-4.jpg");
 }
@@ -440,7 +444,9 @@ a.deactivated{
   height: 100vh;
   max-height: 1600px;
   position: relative;
-  background-color: #222;
+  background-image: url("about/header-image.jpg");
+  background-size: cover;
+  background-position: center center;
   color: #fff;
 }
 
@@ -569,6 +575,10 @@ p.about-body-quote{
   background-size: cover;
 }
 
+#p6-hero{
+  background-image: url("p6-review/screen-1.jpg");
+}
+
 #sony-hero{
   background-image: url("sony-xb950-review/screen-1.jpg");
 }
@@ -631,7 +641,7 @@ p.about-body-quote{
   text-align: left;
 }
 
-.project-section a, .home-about-section a{
+.project-section a, .home-about-section a, .about-body-main a{
   color: #0080FF;
   border-bottom: 2px solid #0080FF;
 }
