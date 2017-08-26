@@ -12,6 +12,10 @@ a{
   word-break: break-all;
 }
 
+i.fa{
+  font-family: 'FontAwesome'!important;
+}
+
 /* SIDEBAR */
 /* SIDEBAR */
 /* SIDEBAR */
@@ -24,9 +28,9 @@ a{
   top: 0;
   left: 0;
   text-align: center;
-  height: 48px;
-  width: 48px;
-  line-height: 48px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
   z-index: 600;
   background-color: #fff;
   color: #000;
@@ -184,6 +188,23 @@ a{
 
 .content-outer .break{
   height: 64px;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.made-with-love{
+  color: #a83f39;
+  font-size: 16px!important;
+}
+
+#footer-outer{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: rgba(0,0,0,0.02);
 }
 
 /* ABOUT */
@@ -470,5 +491,9 @@ label.projects-tab:first-of-type{
 
   .home-name{
     font-size: 42px;
+  }
+
+  #footer-outer{
+    font-size: 14px;
   }
 }

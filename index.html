@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' name='viewport'/>
     <title>Samson Zhang | Graphic Design, Video Editor</title>
     <link rel='stylesheet' href='style.css' type='text/css'/>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css'/>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Chivo:300,300i,400,400i,700,700i|Karla:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i|Lato:400i" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Chivo:300,300i,400,400i,700,700i|Karla:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i|Lato:400i|Roboto:300,300i,400,400i,700,700i" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <div class='hamburger'><i class="fa fa-bars" aria-hidden="true"></i></div>
     <div class='sidebar sidebar-hidden'>
       <div class='sidebar-inner'>
-        <div class='item item-selected'><a href='index.html#home-outer'>Home</a></div>
-        <div class='item'><a href='index.html#projects-outer'>Projects</a></div>
+        <div class='item item-selected' id='item-home'><a href='index.html#home-outer'>Home</a></div>
+        <div class='item' id='item-projects'><a href='index.html#projects-outer'>Projects</a></div>
         <div class='item'><a href='about.html'>About</a></div>
         <div class='item'><a href='blog.html'>Blog</a></div>
         <div class='item'><a href='contact.html'>Contact</a></div>
@@ -30,11 +29,11 @@
       <img src='assets\logo-white-smol.png' class='home-image'>
       <div class='home-back'></div>
       <div class='home-name'><span>Samson Zhang</span></div>
-      <p style='opacity: 0.3; margin-top: 6px;'>Freelancer in New York, NY</p>
+      <p style='opacity: 0.3; margin-top: 6px;'>High Schooler in New York, NY</p>
       <div class='home-inner'>
         <div class='home-left'>
           <p>Graphic Design<br/>Motion Graphics</br>Cinematography + Video Editing</p>
-          <p><i>Willing to freelance or intern -</i><br/><a href='about.html'>Contact Me!</a></p>
+          <p><i>Willing to freelance or intern -</i><br/><a href='contact.html'>Contact Me!</a></p>
         </div>
         <div class='home-right'>
           <p>
@@ -85,6 +84,10 @@
           <div class='project-date'><span>jan 2017</span></div>
           <div class='project-title'><span>Paschy90 - Professional Esports Athlete</span></div>
         </div>
+      </div>
+    </div>
+    <div class='content-outer' id='footer-outer'>
+      <p><span style="font-family:'Roboto';">&#169;</span> Samson Zhang. All rights reserved.<br/>Made with <i class="fa fa-heart made-with-love" aria-hidden="true"></i> in New York, NY.</p>
     </div>
     <script>
     $(".hamburger").click(function () {
@@ -103,26 +106,28 @@
     var windowPadding = $(window).height()/2;
 
     $(window).scroll(function(){
-      if($(window).scrollTop() > (topofDiv + height - windowPadding)){
-        $(".item a").css("color", "#000");
-        $(".sidebar-divider").css("background-color", "#000");
-      }
-      else{
-        $(".item a").css("color", "#fff");
-        $(".sidebar-divider").css("background-color", "#fff");
-      }
+      updateSidebar();
     });
 
     $(function() {
+      updateSidebar();
+    });
+
+    function updateSidebar(){
       if($(window).scrollTop() > (topofDiv + height - windowPadding)){
         $(".item a").css("color", "#000");
         $(".sidebar-divider").css("background-color", "#000");
+        $("#item-home").removeClass("item-selected");
+        $("#item-projects").addClass("item-selected");
       }
       else{
         $(".item a").css("color", "#fff");
         $(".sidebar-divider").css("background-color", "#fff");
+        $("#item-home").addClass("item-selected");
+        $("#item-projects").removeClass("item-selected");
       }
-    });
+    }
+
     </script>
     <script>
     var projectType, projectSelect, projectOld;
