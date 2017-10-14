@@ -1,0 +1,43 @@
+@font-face{
+  src: url("TCM_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT';
+  font-weight: 400;
+}
+
+@font-face{
+  src: url("TCMI_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT';
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  src: url("TCB_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT';
+  font-weight: 700;
+}
+
+@font-face{
+  src: url("TCBI_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT';
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face{
+  src: url("TCCM_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT Condensed';
+  font-weight: 400;
+}
+
+@font-face{
+  src: url("TCCB_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT Condensed';
+  font-weight: 700;
+}
+
+@font-face{
+  src: url("TCCEB_____.WOFF") format("woff");
+  font-family: 'Tw Cen MT Condensed';
+  font-weight: 900;
+}

@@ -164,9 +164,15 @@ h1.page-title, h1.case-title{
 }
 
 h1.case-title{
-  font-family: 'Oswald';
+  font-family: 'Tw Cen MT Condensed';
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: 501px){
+  h1.case-title{
+    font-size: 96px!important;
+  }
 }
 
 @media (max-width: 500px){

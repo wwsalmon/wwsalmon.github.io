@@ -4,6 +4,8 @@ $("head").append(
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Arimo:400,400i,700,700i' rel='stylesheet'/>
 <link rel='stylesheet' type='text/css' href='style.css'/>
 <link rel='stylesheet' type='text/css' href='../style.css'/>
+<link rel='stylesheet' type='text/css' href='fonts/fonts.css'/>
+<link rel='stylesheet' type='text/css' href='../fonts/fonts.css'/>
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
 `
 )
