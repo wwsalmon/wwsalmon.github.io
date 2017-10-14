@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <script src='header.js'></script>
+    <style>
+    #nav-about{
+      opacity: 1.0;
+      font-weight: 700;
+    }
+    </style>
+  </head>
+  <body>
+    <script src='navbar.js'></script>
+    <div class='page-outer floaton-right'>
+      <div class='page-inner center'>
+        <div class='page-header'>
+          <div class='page-back' onclick='changePage("projects.html")'><span>Projects</span></div>
+          <div class='page-arrow'><span>•</span></div>
+          <div class='page-back' onclick='changePage("index.html")'><span>Home</span></div>
+          <h1 class='page-title'>About</h1>
+          <img src='assets/about-pic.jpg'/>
+          <p>My name is Samson Zhang. I live in New York City and attend Phillips Academy in Massachusetts. I work with graphics, web development, filmmaking, and video. I've worked with a political campaign, Columbia University's robotics team, and various school organizations and clubs. I'm constantly seeking new opportunities to learn and get real-world experience. Please don't hesistate to <a class='link' onclick='changePage("contact.html")'>contact me</a> or take a look at <a href='something.pdf'>my resume.</a></p>
+          <p>Outside of code and pixels, I love playing piano and Rocket League, the former which I practice too little and the latter too much. I have been a part of two FIRST Robotics Competition teams, Columbia University's 2 Train Robotics (395) and Phillips Academy's Andover Snowflakes (????). One of my most treasured belongings is a collection of Isaac Asimov's robot short stories (The Complete Robot), and I mostly listen to Owl City and Logic.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+    function changePage(moveTo){
+      $(".page-outer").css({"margin-left": "240px", "transition": "all 0.6s ease"});
+      $(".page-inner").css({"opacity": "0", "transition": "opacity 0.6s ease"});
+
+      setTimeout(function() {
+         window.location.href = moveTo;
+      }, 600);
+    }
+    </script>
+  </body>
+</html>

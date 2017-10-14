@@ -357,6 +357,7 @@ label.projects-tab:first-of-type{
   padding-bottom: 15%;
   line-height: 1.2;
   transition: all 0.2s ease;
+  position: relative;
 }
 
 .project-outer:hover{
