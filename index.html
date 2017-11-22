@@ -1,170 +1,62 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' name='viewport'/>
-    <title>Samson Zhang | Graphic Design, Video Editor</title>
-    <link rel='stylesheet' href='style.css' type='text/css'/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Chivo:300,300i,400,400i,700,700i|Karla:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i|Lato:400i|Roboto:300,300i,400,400i,700,700i" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <script src='header.js'></script>
+    <style>
+    body{
+      color: #fff;
+    }
+    .fadein-3{
+      animation: fade 1.4s 1.5s;
+      animation-fill-mode: both;
+    }
+    .topbar, .bottombar{
+      background-color: unset;
+    }
+    #nav-home{
+      opacity: 1.0;
+      font-weight: 700;
+    }
+    </style>
   </head>
   <body>
-    <div class='hamburger'><i class="fa fa-bars" aria-hidden="true"></i></div>
-    <div class='sidebar sidebar-hidden'>
-      <div class='sidebar-inner'>
-        <div class='item item-selected' id='item-home'><a href='index.html#home-outer'>Home</a></div>
-        <div class='item' id='item-projects'><a href='index.html#projects-outer'>Projects</a></div>
-        <div class='item'><a href='about.html'>About</a></div>
-        <div class='item'><a href='blog.html'>Blog</a></div>
-        <div class='item'><a href='contact.html'>Contact</a></div>
-        <div class='sidebar-divider'></div>
-        <div class='item item-twitter'><a href='https://twitter.com/wwsalmon'>@wwsalmon</a></div>
-        <div class='item item-youtube'><a href='https://www.youtube.com/samsonzhangthesalmon'>YouTube</a></div>
-        <div class='item item-instagram'><a href='https://www.instagram.com/samsonzhangthesalmon/'>Instagram</a></div>
-        <div class='item'><a href='https://www.behance.net/wwsalmon'>Behance</a></div>
-        <div class='item'><a href='https://github.com/wwsalmon'>GitHub</a></div>
+    <script src='navbar.js'></script>
+    <div class='home-outer center center-vert'>
+      <div class='home-text fadein-1' id='home-dotolearn'>
+        <div class='home-text-hidden-outer'><div class='home-text-hidden'><span><i class="fa fa-angle-left" aria-hidden="true"></i> Projects</span></div></div>
+        <span class='home-text-inner' onclick='changePage("projects.html")'>Do to learn,</span>
       </div>
-    </div>
-    <div class='content-outer content-dark fadein-2' id='home-outer'>
-      <img src='assets\logo-white-smol.png' class='home-image'>
-      <div class='home-back'></div>
-      <div class='home-name'><span>Samson Zhang</span></div>
-      <p style='opacity: 0.3; margin-top: 6px;'>High Schooler in New York, NY</p>
-      <div class='home-inner'>
-        <div class='home-left'>
-          <p>Graphic Design<br/>Motion Graphics</br>Cinematography + Video Editing</p>
-          <p><i>Willing to freelance or intern -</i><br/><a href='contact.html'>Contact Me!</a></p>
-        </div>
-        <div class='home-right'>
-          <p>
-            Not ready yet?<br/>
-            <a href='#projects-outer'>Check out my projects</a><br/>
-            <a href='about.html'>More About Me</a>
-          </p>
-        </div>
+      <div class='home-text fadein-2' id='home-learntodo'>
+        <span class='home-text-light'>not </span><span class='home-text-inner' onclick='changePage("about.html")'>learn to do.</span>
+        <div class='home-text-hidden-outer'><div class='home-text-hidden' id='home-text-about'><span>About <i class="fa fa-angle-right" aria-hidden="true"></i></span></div></div>
       </div>
-    </div>
-    <div class='content-outer' id='projects-outer'>
-      <h1>Projects</h1>
-      <div class='projects-tabs-outer'>
-        <form class='projects-tabs'>
-          <input type="radio" name='projects-tabs' id='projects-tabs-all' value='1' checked='checked'></input>
-          <label for="projects-tabs-all" class='projects-tab'>All</label>
-          <input type="radio" name='projects-tabs' id='projects-tabs-graphic' value='2'></input>
-          <label for="projects-tabs-graphic" class='projects-tab'>Graphic Design</label>
-          <input type="radio" name='projects-tabs' id='projects-tabs-video' value='3'></input>
-          <label for="projects-tabs-video" class='projects-tab'>Video</label>
-          <input type="radio" name='projects-tabs' id='projects-tabs-music' value='4'></input>
-          <label for="projects-tabs-music" class='projects-tab'>Music</label>
-        </form>
-      </div>
-      <div class='projects-container'>
-        <div class='project-outer project-graphic' onclick="javascript:location.href='https://www.behance.net/gallery/55579765/Lets-Hear-Harlem-Branding-(Holland4Harlem-Campaign)'">
-          <img src='assets/projects/h4h-1.jpg'/>
-          <div class='project-date'><span>aug 2017</span></div>
-          <div class='project-title'><span>Let's Hear Harlem Rebranding</span></div>
-        </div>
-        <div class='project-outer project-graphic'>
-          <img src='assets/projects/h4h-2.jpg'/>
-          <div class='project-date'><span>aug 2017</span></div>
-          <div class='project-title'><span>Holland 4 Harlem Campaign</span></div>
-        </div>
-        <div class='project-outer project-graphic project-video'>
-          <img src='assets/projects/locthevote.jpg'/>
-          <div class='project-date'><span>aug 2017</span></div>
-          <div class='project-title'><span>LOC the Vote</span></div>
-        </div>
-        <div class='project-outer project-graphic'>
-          <img src='assets/projects/bothposters.png'/>
-          <div class='project-date'><span>aug 2016</span></div>
-          <div class='project-title'><span>CSS Middle School Government</span></div>
-        </div>
-        <div class='project-outer project-video'>
-          <img src='assets/projects/fallen-cover.jpg'/>
-          <div class='project-date'><span>may 2017</span></div>
-          <div class='project-title'><span>Fallen Short Film</span></div>
-        </div>
-        <div class='project-outer project-graphic'>
-          <img src='assets/projects/paschy90.png'/>
-          <div class='project-date'><span>jan 2017</span></div>
-          <div class='project-title'><span>Paschy90 - Professional Esports Athlete</span></div>
-        </div>
-      </div>
-    </div>
-    <div class='content-outer' id='footer-outer'>
-      <p><span style="font-family:'Roboto';">&#169;</span> Samson Zhang. All rights reserved.<br/>Made with <i class="fa fa-heart made-with-love" aria-hidden="true"></i> in New York, NY.</p>
+      <p class='home-descript fadein-3'>Hi, I'm Samson. I'm a sophomore at Phillips Academy in Andover, MA. I work with videos, websites, graphics, and everything in between.<br/><br/>
+        <a href='https://www.youtube.com/samsonzhangthesalmon'>yt</a>
+        <a href='https://www.instagram.com/samsonzhangthesalmon/'>ig</a>
+        <a href='https://twitter.com/wwsalmon'>tw</a>
+        <a href='mailto:samsonzhang@wwsalmon.com'>email</a>
+      </p>
     </div>
     <script>
-    $(".hamburger").click(function () {
-      $(".sidebar").toggleClass("sidebar-hidden");
-    })
-    </script>
-    <script>
-    $('a[href*=\\#]').on('click', function(event){
-      event.preventDefault();
-      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-    });
-    </script>
-    <script type="text/javascript">
-    var topofDiv = $(".content-dark").offset().top;
-    var height = $(".content-dark").outerHeight();
-    var windowPadding = $(window).height()/2;
-
-    $(window).scroll(function(){
-      updateSidebar();
+    $(document).ready(function(){
+        $("body").css({"background-color": "#222"});
     });
 
-    $(function() {
-      updateSidebar();
-    });
+    function changePage(moveTo){
+      $("body").css({"background-color": "#fff", "transition": "all 0.55s ease"});
+      $(".topbar, .bottombar").css({"color": "#000", "transition": "all 0.55s ease"});
 
-    function updateSidebar(){
-      if($(window).scrollTop() > (topofDiv + height - windowPadding)){
-        $(".item a").css("color", "#000");
-        $(".sidebar-divider").css("background-color", "#000");
-        $("#item-home").removeClass("item-selected");
-        $("#item-projects").addClass("item-selected");
+      if (moveTo == "projects.html"){
+        $(".home-outer").css({"opacity": "0", "margin-left": "12%", "transition": "all 1.4s ease"});
       }
-      else{
-        $(".item a").css("color", "#fff");
-        $(".sidebar-divider").css("background-color", "#fff");
-        $("#item-home").addClass("item-selected");
-        $("#item-projects").removeClass("item-selected");
-      }
-    }
 
-    </script>
-    <script>
-    var projectType, projectSelect, projectOld;
+      if (moveTo == "about.html"){
+        $(".home-outer").css({"opacity": "0", "margin-left": "-12%", "transition": "all 1.4s ease"});
+      }
 
-    $(function() {
-      projectSelect = 1;
-      projectOld = $('.project-outer');
-      updateProjects(projectSelect);
-    });
-
-    $('.projects-tab').click(function(){
-      projectSelect = $('#' + $(this).attr('for')).val();
-      updateProjects(projectSelect);
-    });
-
-    function updateProjects(projectSelect){
-      if (projectSelect == 1){
-        projectType = $('.project-outer');
-      }
-      else if (projectSelect == 2){
-        projectType = $('.project-graphic');
-      }
-      else if (projectSelect == 3){
-        projectType = $('.project-video');
-      }
-      else if (projectSelect == 4){
-        projectType = $('.project-music');
-      }
-      console.log(projectOld);
-      projectOld.fadeOut(100);
-      projectOld = projectType;
-      projectType.fadeIn(100);
+      setTimeout(function() {
+         window.location.href = moveTo;
+      }, 500);
     }
     </script>
   </body>
