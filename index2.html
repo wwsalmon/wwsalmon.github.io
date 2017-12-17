@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i|Cormorant+Garamond:300,300i,400,400i,700,700i' rel='stylesheet'/>
+    <link rel='stylesheet' type='text/css' href='style2.css'>
+    <link rel='stylesheet' type='text/css' href='fonts.css'/>
+    <link rel='stylesheet' type='text/css' href='../fonts.css'/>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
+    <style>
+    #nav-projects{
+      opacity: 1.0;
+      font-weight: 700;
+    }
+    </style>
+  </head>
+  <body>
+    <div class='page-outer page-home floaton-left'>
+      <div class='page-inner'>
+        <img class='home-logo' src='wwsalmon-logo.png'>
+        <div class='home-media'>
+          <span>twitter / instagram / youtube</span>
+        </div>
+        <div class='home-text'>
+          <span>
+            Hello! I'm <b>Samson Zhang</b>. I capture ideas and stories in video, photo, graphics, motion graphics, and code.
+            <br/>
+            <br/>
+            I'm currently looking for internships and freelance work. Contact me: <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a>
+          </span>
+        </div>
+        <div class='page-breaker'></div>
+      </div>
+    </div>
+    <div class='page-outer floaton-left'>
+      <div class='page-inner'>
+        <div class='home-media'><span>Featured Projects:</span></div>
+      </div>
+      <div class='projects-container'>
+        <div class='project-item' onclick='changePage("projects/holland4harlem.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>01</span></div>
+            <img src='projects/h4h-1.jpg'>
+            <div class='project-descript'><span>Holland4Harlem Campaign (2017)<br/></span><span class='project-category'>Branding, Graphic Design</span></div>
+          </div>
+        </div>
+        <div class='project-item'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>02</span></div>
+            <img src='projects/fallen-cover.jpg'>
+            <div class='project-descript'><span>Cinematography Reel (2017)<br/></span><span class='project-category'>Cinematography, Video Editing,   VFX</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("projects/columbiasecondary.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>03</span></div>
+            <img src='projects/msgov.jpg'>
+            <div class='project-descript project-descript-top-right'><span>CSS Middle School Student Government (2016)<br/></span><span class='project-category'>Branding, Graphic Design, Photography</span></div>
+          </div>
+        </div>
+        <div class='project-item'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>04</span></div>
+            <img src='projects/ragtime-cover.jpg'>
+            <div class='project-descript'><span>Ragtime (2017)<br/></span><span class='project-category'>Photography</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    function changePage(moveTo){
+      if (moveTo == "index.html" || moveTo == "about.html"){
+        $(".page-outer").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
+      }
+      else{
+        $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
+      }
+      $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
+
+      setTimeout(function() {
+         window.location.href = moveTo;
+      }, 600);
+    }
+    </script>
+  </body>
+</html>
