@@ -51,6 +51,12 @@ a{
   position: relative;
 }
 
+@media (min-width: 600px){
+  .page-inner{
+    padding: 0 28px;
+  }
+}
+
 @media (min-width: 1200px){
   .page-inner{
     padding: 0 60px;
