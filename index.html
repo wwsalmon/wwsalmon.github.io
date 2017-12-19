@@ -1,62 +1,85 @@
 <html>
   <head>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <style>body{visibility: hidden;}</style> <!--hide body until main stylesheet loads-->
     <script src='header.js'></script>
-    <style>
-    body{
-      color: #fff;
-    }
-    .fadein-3{
-      animation: fade 1.4s 1.5s;
-      animation-fill-mode: both;
-    }
-    .topbar, .bottombar{
-      background-color: unset;
-    }
-    #nav-home{
-      opacity: 1.0;
-      font-weight: 700;
-    }
-    </style>
+    <title>Samson Zhang | Freelance Creative</title>
   </head>
   <body>
-    <script src='navbar.js'></script>
-    <div class='home-outer center center-vert'>
-      <div class='home-text fadein-1' id='home-dotolearn'>
-        <div class='home-text-hidden-outer'><div class='home-text-hidden'><span><i class="fa fa-angle-left" aria-hidden="true"></i> Projects</span></div></div>
-        <span class='home-text-inner' onclick='changePage("projects.html")'>Do to learn,</span>
+    <div class='page-outer page-home floaton-left'>
+      <div class='page-inner'>
+        <img class='home-logo' src='wwsalmon-logo.png'>
+        <div class='home-media'>
+          <span><a href='https://twitter.com/wwsalmon'>twitter</a> / <a href='https://www.instagram.com/samsonzhangthesalmon/'>instagram</a> / <a href='https://www.youtube.com/samsonzhangthesalmon'>youtube</a></span>
+        </div>
+        <div class='home-text'>
+          <span>
+            Hello! I'm <b>Samson Zhang</b>. I capture ideas and stories in video, photo, graphics, motion graphics, and code.
+            <br/>
+            <br/>
+            I'm currently looking for internships and freelance work. Contact me: <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a>
+          </span>
+        </div>
+        <div class='page-breaker'></div>
       </div>
-      <div class='home-text fadein-2' id='home-learntodo'>
-        <span class='home-text-light'>not </span><span class='home-text-inner' onclick='changePage("about.html")'>learn to do.</span>
-        <div class='home-text-hidden-outer'><div class='home-text-hidden' id='home-text-about'><span>About <i class="fa fa-angle-right" aria-hidden="true"></i></span></div></div>
+    </div>
+    <div class='page-outer floaton-left'>
+      <div class='page-inner'>
+        <div class='home-media'><span>Featured Projects:</span></div>
       </div>
-      <p class='home-descript fadein-3'>Hi, I'm Samson. I'm a sophomore at Phillips Academy in Andover, MA. I work with videos, websites, graphics, and everything in between.<br/><br/>
-        <a href='https://www.youtube.com/samsonzhangthesalmon'>yt</a>
-        <a href='https://www.instagram.com/samsonzhangthesalmon/'>ig</a>
-        <a href='https://twitter.com/wwsalmon'>tw</a>
-        <a href='mailto:samsonzhang@wwsalmon.com'>email</a>
-      </p>
+      <div class='projects-container'>
+        <div class='project-item' onclick='changePage("holland4harlem/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>01</span></div>
+            <img src='covers/h4h-cover.jpg'>
+            <div class='project-descript'><span>Holland4Harlem Campaign (2017)<br/></span><span class='project-category'>Branding, Graphic Design</span></div>
+          </div>
+        </div>
+        <div class='project-item'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>02</span></div>
+            <img src='covers/fallen-cover.jpg'>
+            <div class='project-descript'><span>Cinematography Reel (2017)<br/></span><span class='project-category'>Cinematography, Video Editing,   VFX</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("columbiasecondary/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>03</span></div>
+            <img src='covers/msgov-cover.jpg'>
+            <div class='project-descript project-descript-top-right'><span>CSS Middle School Student Government (2016)<br/></span><span class='project-category'>Branding, Graphic Design, Photography</span></div>
+          </div>
+        </div>
+        <div class='project-item'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>04</span></div>
+            <img src='covers/ragtime-cover.jpg'>
+            <div class='project-descript'><span>Ragtime (2017)<br/></span><span class='project-category'>Photography</span></div>
+          </div>
+        </div>
+      </div>
+      <div class='page-inner'>
+        <div style='height: 1px;'></div>
+        <div class='page-breaker'></div>
+      </div>
+    </div>
+    <div class='page-outer page-footer'>
+      <div class='page-inner'>
+        <div class='home-media' style='opacity:0.4;'><span>© Samson Zhang 2017<br/>Made with </span><span style='color: red;'>❤</span><span> in New York, NY</span></div>
+      </div>
     </div>
     <script>
-    $(document).ready(function(){
-        $("body").css({"background-color": "#222"});
-    });
-
     function changePage(moveTo){
-      $("body").css({"background-color": "#fff", "transition": "all 0.55s ease"});
-      $(".topbar, .bottombar").css({"color": "#000", "transition": "all 0.55s ease"});
-
-      if (moveTo == "projects.html"){
-        $(".home-outer").css({"opacity": "0", "margin-left": "12%", "transition": "all 1.4s ease"});
+      if (moveTo == "index.html" || moveTo == "about.html"){
+        $(".page-outer").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
       }
-
-      if (moveTo == "about.html"){
-        $(".home-outer").css({"opacity": "0", "margin-left": "-12%", "transition": "all 1.4s ease"});
+      else{
+        $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
       }
+      $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
 
       setTimeout(function() {
          window.location.href = moveTo;
-      }, 500);
+      }, 600);
     }
     </script>
   </body>
