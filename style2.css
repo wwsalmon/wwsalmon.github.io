@@ -14,8 +14,18 @@ body{
 }
 
 .center-vert{
+  display: inline-block;
+  position: relative;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+}
+
+.center-both{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 a{
@@ -42,12 +52,22 @@ a{
 /* PAGE */
 /* PAGE */
 
+.page-section{
+  position: relative;
+  top: 0;
+}
+
 .page-outer{
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
   width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.page-inner{
   position: relative;
 }
 
@@ -110,8 +130,16 @@ a{
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 64px 0;
+  padding: 64px 0;
   line-height: 1.4;
+}
+
+.home-media-click span{
+  cursor: pointer;
+}
+
+.home-media .fa{
+  margin-right: 8px;
 }
 
 @media (min-width: 600px){
@@ -231,6 +259,249 @@ a{
 
   .projects-container{
     padding: 28px;
+  }
+}
+
+/* PROJECT PAGE */
+/* PROJECT PAGE */
+/* PROJECT PAGE */
+/* PROJECT PAGE */
+/* PROJECT PAGE */
+
+#h4h-hero{
+  background-color: #142D70;
+  color: #fff;
+}
+
+.project-intro h1{
+  font-family: 'Roboto';
+  font-size: 56px;
+  font-weight: 300;
+}
+
+.project-hero-descript{
+  padding: inherit;
+  padding-bottom: 96px;
+}
+
+.intro-object{
+  position: absolute;
+  bottom: 0;
+  right: 64px;
+  z-index: -1;
+  height: 90%;
+  display: none;
+}
+
+.project-table{
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+}
+
+.project-table th{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-table td, th{
+  padding: 6px 12px 6px 0;
+}
+
+.page-section p{
+  line-height: 1.8;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.page-section-half{
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  padding: 28px;
+}
+
+.page-section-half-inner{
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.project-section .slider{
+  min-height: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide img{
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.slider-button-outer{
+  position: relative;
+  top: -8px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.slider-button-outer span{
+  opacity: 0.4;
+}
+
+.slider-button-outer span:hover{
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.indicator{
+  opacity: 0.1;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.project-dark{
+  background-color: #222;
+  color: #fff;
+}
+
+.project-light{
+  background-color: #fff;
+  color: #000;
+}
+
+.project-dark .indicator{
+  background-color: #fff;
+}
+
+.project-light .indicator{
+  background-color: #000;
+}
+
+#slideposition{
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#slideposition ul{
+  margin: 0;
+  padding: 0;
+}
+
+.indicator:hover{
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.indicator.active{
+  opacity: 1.0;
+}
+
+.double-column{
+  padding-top: 64px;
+}
+
+.project-section{
+  padding: 0 0 32px 0;
+}
+
+.page-section-half table{
+  padding: 0;
+  font-size: 24px;
+  border-collapse: collapse;
+}
+
+.page-section-half table td, .page-section-half table th{
+  padding: 6px 12px;
+  border: 1px solid rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.page-section-half table th{
+  text-align: left;
+}
+
+@media (max-width: 600px){
+  .project-intro h1{
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px){
+  .project-hero-descript{
+    position: absolute;
+    max-width: 600px;
+    left: 0;
+    bottom: 0;
+  }
+
+  .project-intro{
+    min-height: 1000px;
+    height: 80vh;
+  }
+
+  .project-intro h1{
+    font-size: 96px;
+  }
+
+  .page-section p{
+    font-size: 24px;
+    margin: 0;
+    padding: 16px 0;
+    max-width: 700px;
+  }
+
+  .page-section-double, .double-column{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-section-half{
+    flex: 1 1 50%;
+    min-height: 800px;
+  }
+
+  .double-column-inner{
+    flex: 1 1 50%;
+    max-width: 700px;
+    padding-right: 64px;
+  }
+
+  .page-section-half-inner{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 64px 64px 64px 96px;
+  }
+
+  .page-section-half-left{
+    float: right;
+  }
+
+  .intro-object{
+    display: inline-block;
+  }
+
+  .project-section .slider{
+    min-height: 800px;
+  }
+
+  .project-section{
+    padding: 64px 0 128px 0;
   }
 }
 
