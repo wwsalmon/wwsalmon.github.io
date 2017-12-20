@@ -186,7 +186,7 @@ a{
 
 .project-category{
   display: inline-block;
-  opacity: 0.2;
+  opacity: 0.4;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 16px;
@@ -274,6 +274,11 @@ a{
   color: #fff;
 }
 
+#p6-hero{
+  background-color: #FF1818;
+  color: #fff;
+}
+
 .project-intro h1{
   font-family: 'Roboto';
   font-size: 56px;
@@ -322,7 +327,7 @@ a{
 }
 
 .page-section-half-image{
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 .page-section-half-inner{
@@ -332,11 +337,11 @@ a{
 
 .project-section .slider{
   min-height: 80vw;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
-.slide img{
+.slide > img, .slide > .cocoen-outer{
   display: inline-block;
   position: relative;
   top: 50%;
@@ -347,9 +352,8 @@ a{
 }
 
 .slider-button-outer{
+  display: inline-block;
   position: relative;
-  top: -8px;
-  transform: translateY(-50%);
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -392,11 +396,12 @@ a{
 
 #slideposition{
   z-index: 2;
-  position: relative;
+  position: absolute;
   display: inline-block;
-  position: relative;
   left: 50%;
   transform: translateX(-50%);
+  min-width: 64px;
+  max-width: 200px;
 }
 
 #slideposition ul{
@@ -477,13 +482,29 @@ a{
   margin-right: 8px;
 }
 
+.youtube-player{
+  width: 100%;
+}
+
 @media (max-width: 600px){
   .project-intro h1{
     font-size: 36px;
   }
 }
 
+@media (max-width: 1200px){
+  .slider-button-outer{
+    padding-top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media (min-width: 1200px){
+  .slider-button-outer{
+    top: -8px;
+  }
+
   .project-other{
     margin-right: 16px;
     flex: 0 0 calc(33% - 16px);
@@ -503,7 +524,7 @@ a{
 
   .project-hero-descript{
     position: absolute;
-    max-width: 600px;
+    max-width: 700px;
     left: 0;
     bottom: 0;
   }
