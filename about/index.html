@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <style>body{visibility: hidden;}</style> <!--hide body until main stylesheet loads-->
+    <script src='../header.js'></script>
+    <title>Résumé | Samson Zhang, Freelance Creative</title>
+  </head>
+  <body>
+    <div class='page-outer page-home floaton-left'>
+      <div class='page-inner'>
+        <div class='home-media home-media-click'><span onclick='changePage("../index.html")'><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back home</span></div>
+        <div class='home-text'>
+          <span>Download a <b><a class='link' href='samsonzhang-resume.pdf'>printable PDF version</a></b>.<br/><br/>
+          Self-taught cinematographer, video editor, photo editor, graphic designer, motion graphics artist, and front-end web developer.<br/><br/>
+          Proficient in Adobe Premiere Pro, Photoshop, After Effects, and Lightroom; HTML5, CSS3, and JQuery.<br/><br/>
+          Do to learn, not learn to do - extremely self motivated and constantly learning and experimenting.
+        </span>
+        </div>
+        <div class='page-breaker'></div>
+        <div class='home-media'><span>Work Experience</span></div>
+        <div class='work-outer'>
+          <div class='work-picture'><img src='andover.png'></div>
+          <div class='work-content'>
+            <div class='work-title'><span>Phillips Academy Andover</span></div>
+            <div class='work-role'><span>Photographer, Cinematographer, Video Editor</span></div>
+            <div class='work-date'><span>October 2017 - Ongoing</span></div>
+            <div class='work-descript'><span>
+              Often listed as the "best high school in America", Andover is an extremely prestigious 9-12 boarding school in Massachusetts.<br/><br/>
+              I'm working with the Andover Admissions Office to look over and create a set of videos that will be sent to all new admittees for Fall 2018.<br/><br/>
+              Case study coming soon
+            </span></div>
+          </div>
+          <div class='work-picture'><img src='h4h.png'></div>
+          <div class='work-content'>
+            <div class='work-title'><span>Marvin Holland for City Council 2017</span></div>
+            <div class='work-role'><span>Graphic Designer</span></div>
+            <div class='work-date'><span>July 2017 - September 2017</span></div>
+            <div class='work-descript'><span>
+              Marvin Holland is a Navy Vet and longtime community activist who ran for NYC District 9 City Council in 2017.<br/><br/>
+              I refreshed the H4H and LHH branding, and was responsible for all social media and print graphics made and put out during the time I worked here.<br/><br/>
+              <b class='link' onclick='changePage("../holland4harlem/index.html")'>View Case Study</b>
+            </span></div>
+          </div>
+          <div class='work-picture'><img src='2train.png'></div>
+          <div class='work-content'>
+            <div class='work-title'><span>2 Train Robotics / Columbia University</span></div>
+            <div class='work-role'><span>Media Director</span></div>
+            <div class='work-date'><span>September 2016 - May 2017</span></div>
+            <div class='work-descript'><span>
+              2 Train Robotics is Columbia University's Robotics Team, consisting of members from the Morris Educational Campus in the Bronx and my former high school, Columbia Secondary School.<br/><br/>
+              I led all the team's media efforts, including social media management, website design, and video production. I shot, directed, and edited the team's video submission for the FIRST Chairman's Award, the first that we'd shot in years.<br/><br/>
+              Case study coming soon
+            </span></div>
+          </div>
+        </div>
+        <div class='page-breaker'></div>
+        <div class='home-media'>
+          <span><a href='https://twitter.com/wwsalmon'>twitter</a> / <a href='https://www.instagram.com/samsonzhangthesalmon/'>instagram</a> / <a href='https://www.youtube.com/samsonzhangthesalmon'>youtube</a></span>
+        </div>
+        <div class='home-text'><span>Ready to work with me? Contact me at <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a> or social media.</span></div>
+        <div class='page-breaker'></div>
+      </div>
+    </div>
+    <div class='page-outer page-footer'>
+      <div class='page-inner'>
+        <div class='home-media' style='opacity:0.4;'><span>© Samson Zhang 2017<br/>Made with </span><span style='color: red;'>❤</span><span> in New York, NY</span></div>
+      </div>
+    </div>
+    <script>
+    function changePage(moveTo){
+      if (moveTo == "index.html" || moveTo == "about.html"){
+        $(".page-outer").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
+      }
+      else{
+        $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
+      }
+      $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
+
+      setTimeout(function() {
+         window.location.href = moveTo;
+      }, 600);
+    }
+    </script>
+  </body>
+</html>
