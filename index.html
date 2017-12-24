@@ -17,7 +17,7 @@
             Hello! I'm <b style='color: #000;'>Samson Zhang</b>. I capture ideas and stories in video, photo, graphics, motion graphics, and code.
             <br/>
             <br/>
-            Take a look at my <b class='link' onclick='changePage("about/index.html")'>résumé</b> or say hi: <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a>
+            Take a look at my <b class='link' onclick='changePage("resume/index.html")'>résumé</b> or say hi: <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a>
           </span>
         </div>
         <div class='page-breaker'></div>
@@ -69,12 +69,7 @@
     </div>
     <script>
     function changePage(moveTo){
-      if (moveTo == "index.html" || moveTo == "about.html"){
-        $(".page-outer").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
-      }
-      else{
-        $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
-      }
+      $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
       $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
 
       setTimeout(function() {

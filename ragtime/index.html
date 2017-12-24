@@ -200,12 +200,7 @@
 
     <script>
     function changePage(moveTo){
-      if (moveTo == "index.html" || moveTo == "about.html"){
-        $(".page-section").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
-      }
-      else{
-        $(".page-section").css({"top": "-64px", "transition": "all 0.6s ease"})
-      }
+      $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
       $(".page-section, .page-outer, .page-inner, .project-section").css({"opacity": "0", "transition": "all 0.6s ease"});
 
       setTimeout(function() {
