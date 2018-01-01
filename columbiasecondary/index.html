@@ -178,6 +178,54 @@
       </div>
     </div>
 
+    <div class='page-section project-section project-dark floaton-left'>
+      <div class='page-outer'>
+        <div class='page-inner'>
+          <div class='home-media'><span>04. Graphic + Web Design</span></div>
+          <div class='slider slider4'>
+            <div class='slide slide4'>
+              <img src='bothposters.png'>
+            </div>
+            <div class='slide slide4'>
+              <img src='contrariwise.jpg'>
+            </div>
+          </div>
+          <div class='slider-button-outer'>
+            <span onclick='slider4.prevSlide();'>prev</span><span style='opacity: 0.4; cursor: unset;'> / </span><span onclick='slider4.nextSlide();'>next</span>
+          </div>
+          <script>
+          $(document).ready(function(){
+            var options = {
+              slides: '.slide4', // The name of a slide in the slidesContainer
+          		swipe: false,	// Add possibility to Swipe
+          		magneticSwipe: true, // Add 'magnetic' swiping. When the user swipes over the screen the slides will attach to the mouse's position
+          		transition: "fade", // Accepts "slide" and "fade" for a slide or fade transition
+          		slideTracker: true, // Add a UL with list items to track the current slide
+          		slideTrackerID: 'slideposition', // The name of the UL that tracks the slides
+          		slideOnInterval: false, // Slide on interval
+          		interval: 2000, // Interval to slide on if slideOnInterval is enabled
+          		animateDuration: 200, // Duration of an animation
+          		animationEasing: 'easeInOut', // Accepts: linear ease in out in-out snap easeOutCubic easeInOutCubic easeInCirc easeOutCirc easeInOutCirc easeInExpo easeOutExpo easeInOutExpo easeInQuad easeOutQuad easeInOutQuad easeInQuart easeOutQuart easeInOutQuart easeInQuint easeOutQuint easeInOutQuint easeInSine easeOutSine easeInOutSine easeInBack easeOutBack easeInOutBack
+          		pauseOnHover: false, // Pause when user hovers the slide container
+          		useDefaultCSS: true, // Add default CSS for positioning the slides
+          		neverEnding: true // Create a 'neverending/repeating' slider effect.
+            }
+            $(".slider4").simpleSlider(options);
+            slider4 = $(".slider4").data("simpleslider");
+          })
+          </script>
+          <div class='double-column'>
+            <div class='double-column-inner'>
+              <p>1. Promotional poster for CSS Middle School Student Government, 2016.</p>
+            </div>
+            <div class='double-column-inner'>
+              <p>2. Website redesign for the CSS journal of philosophy, Contrariwise. Mockup website is live at <a class='link' href='http://contrariwise.wwsalmon.com/'>contrariwise.wwsalmon.com</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class='page-outer'>
       <div class='page-inner'>
         <div class='home-media'><span>Related Projects</span></div>
