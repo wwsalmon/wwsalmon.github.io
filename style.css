@@ -177,6 +177,8 @@ a{
   height: 50%;
   top: 0;
   transition: all 0.2s ease;
+  padding: 32px;
+  box-sizing: border-box;
 }
 
 div.project-item-half:nth-of-type(1){
@@ -189,13 +191,11 @@ div.project-item-half:nth-of-type(1){
 }
 
 .project-item-half .fa{
-  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .ext-link{
-  ntext-transform: uppercase;
-  font-size: 32px;
-  nletter-spacing: 1px;
+  font-size: 24px;
   font-weight: 700;
   font-family: 'Playfair Display';
 }
@@ -262,6 +262,10 @@ div.project-item-half:nth-of-type(2){
 
   .project-item{
     padding: 16px;
+  }
+
+  .ext-link{
+    font-size: 32px;
   }
 }
 

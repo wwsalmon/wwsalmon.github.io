@@ -9,6 +9,8 @@ $("head").append(
 <link rel='stylesheet' type='text/css' href='../fonts.css'/>
 <link rel='stylesheet' type='text/css' href='cocoen.min.css'/>
 <link rel='stylesheet' type='text/css' href='../cocoen.min.css'/>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
 
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
 `
