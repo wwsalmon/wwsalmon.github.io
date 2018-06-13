@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+    <style>body{visibility: hidden;}</style> <!--hide body until main stylesheet loads-->
+    <script src='header.js'></script>
+    <title>Samson Zhang | Freelance Creative</title>
+  </head>
+  <body>
+    <div class='page-outer page-home floaton-left'>
+      <div class='page-inner'>
+        <img class='home-logo' src='wwsalmon-logo.png'>
+        <div class='home-media'>
+          <span><a href='https://twitter.com/wwsalmon'>twitter</a> / <a href='https://www.instagram.com/samsonzhangthesalmon/'>instagram</a> / <a href='https://www.youtube.com/samsonzhangthesalmon'>youtube</a></span>
+        </div>
+        <div class='home-text'>
+          <span>
+            Hello! I'm <b style='color: #000;'>Samson Zhang</b>. I capture ideas and stories in video, photo, graphics, motion graphics, and code.
+            <br/>
+            <br/>
+            Learn more <a class='link' onclick='changePage("about/index.html")'>about me</a>, take a look at my <a href='about/samsonzhang-resume.pdf' class='link'>résumé</a>, or <a class='link' href='mailto:samsonzhang@wwsalmon.com'>say hi</a>. Scroll down to see some featured projects.
+          </span>
+        </div>
+        <div class='page-breaker'></div>
+      </div>
+    </div>
+    <div class='page-outer floaton-left'>
+      <div class='page-inner'>
+        <div class='home-media'><span>Featured Projects:</span></div>
+      </div>
+      <div class='projects-container'>
+        <div class='project-item' onclick='changePage("holland4harlem/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>01</span></div>
+            <img src='covers/h4h-cover.jpg'>
+            <div class='project-descript'><span>Holland4Harlem Campaign (2017)<br/></span><span class='project-category'>Branding, Graphic Design</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("p6/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>02</span></div>
+            <img src='covers/p6-cover.jpg'>
+            <div class='project-descript'><span>Sound Intone P6 Headphones<br/></span><span class='project-category'>Product Cinematography, Editing</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("2train/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>03</span></div>
+            <img src='covers/2train-cover.jpg'>
+            <div class='project-descript'><span>2 Train Robotics (2016-17 / WIP)<br/></span><span class='project-category'>Cinematography, Editing, Media Direction, Photography</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("ragtime/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>04</span></div>
+            <img src='covers/ragtime-cover.jpg'>
+            <div class='project-descript'><span>Ragtime (2017)<br/></span><span class='project-category'>Photography</span></div>
+          </div>
+        </div>
+        <div class='project-item' onclick='changePage("columbiasecondary/index.html")'>
+          <div class='project-item-inner'>
+            <div class='project-number'><span>05</span></div>
+            <img src='covers/msgov-cover.jpg'>
+            <div class='project-descript project-descript-top-right'><span>Columbia Secondary School (2015-17)<br/></span><span class='project-category'>Photography, Graphic Design</span></div>
+          </div>
+        </div>
+        <div class='project-item project-item-double'>
+          <div class='project-item-inner'>
+            <img src='covers/square.png'>
+            <div class='project-item-half' onclick='changePage("https://www.instagram.com/samsonzhangthesalmon/")'>
+              <div class='ext-link center-both'><span>More Photography on Instagram<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></div>
+            </div>
+            <div class='project-item-half' onclick='changePage("https://www.youtube.com/samsonzhangthesalmon")'>
+              <div class='ext-link center-both'><span>More Videos on YouTube<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='page-inner'>
+        <div style='height: 1px;'></div>
+        <div class='page-breaker'></div>
+      </div>
+    </div>
+    <div class='page-outer page-footer'>
+      <div class='page-inner'>
+        <div class='home-media' style='opacity:0.4;'><span>© Samson Zhang 2017<br/>Made with </span><span style='color: red;'>❤</span><span> in New York, NY</span></div>
+      </div>
+    </div>
+    <script>
+    function changePage(moveTo){
+      $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
+      $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
+
+      setTimeout(function() {
+         window.location.href = moveTo;
+      }, 600);
+    }
+    </script>
+  </body>
+</html>

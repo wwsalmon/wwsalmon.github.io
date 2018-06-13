@@ -1,98 +1,62 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-    <style>body{visibility: hidden;}</style> <!--hide body until main stylesheet loads-->
-    <script src='../header.js'></script>
-    <title>Résumé | Samson Zhang, Freelance Creative</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
+    <link rel="shortcut icon" href="../logo.png" />
+    <link rel='stylesheet' type='text/css' href='../style.css'/>
+    <link rel='stylesheet' type='text/css' href='../sidebar.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Roboto" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <title>About | Samson Zhang, filmmaker</title>
   </head>
   <body>
-    <div class='page-outer page-home floaton-left'>
-      <div class='page-inner'>
-        <img src='profile-2.jpg' style='margin-bottom: 128px; max-width: 600px; width: 100%; display: block; border-radius: 50%;'>
-        <div class='home-media home-media-click'><span onclick='changePage("../index.html")'><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back home</span></div>
-        <div class='home-text'>
-          Four years ago, my friends and I sawed an old apple crate in half, attached it to the legs of an old telescope, and made a tripod for my old iPad.
-          </span>
-        </div>
-        <p><b>Do to learn, not learn to do</b> - I'm extremely self motivated and constantly learning and experimenting. I believe that, with enough time and dedication, anything that I'm interested in I can learn, and that the best way to learn is to actually go and work on a project or larger goal. I'm constantly learning new things in pursuit of set goals.</p>
-        <p>I'm a self-taught cinematographer, video editor, photo editor, graphic designer, motion graphics artist, and front-end web developer; proficient in Adobe Premiere Pro, Photoshop, After Effects, and Lightroom; HTML5, CSS3, and JQuery.</p>
-        <p>I also like playing Rocket League, playing piano, geeking out over tech, and running. I really love Asimov's Robot Series, especially his anthology book The Complete Robot.</p>
-        <p>I'm currently a sophomore at Phillips Academy in Andover, MA, and live in New York City, looking for summer freelance work and internships. <a class='link' href='samsonzhang-resume.pdf'><b>Download my resume</b></a> or scroll down to see some of my work experience and projects.</p>
-        <div class='page-breaker'></div>
-        <div class='home-media'><span>Work Experience</span></div>
-        <div class='work-outer'>
-          <div class='work-item'>
-            <div class='home-media'><span>2017 - Ongoing</span></div>
-            <div class='work-title'>
-              <span>Phillips Academy Andover Admissions</span>
-              <div class='work-hover'><span>Coming Soon</span></div>
-            </div>
-            <div class='work-role'><span>Video Producer</span></div>
-          </div>
-          <div class='work-item'>
-            <div class='home-media'><span>2017</span></div>
-            <div class='work-title' onclick='changePage("../holland4harlem/index.html")'><span>Marvin Holland for City Council</span></div>
-            <div class='work-role'><span>Graphic Designer</span></div>
-          </div>
-          <div class='work-item'>
-            <div class='home-media'><span>2016 - 2017</span></div>
-            <div class='work-title' onclick='changePage("../2train/index.html")'><span>2 Train Robotics / Columbia University</span></div>
-            <div class='work-role'><span>Media Director</span></div>
-          </div>
-        </div>
-        <div class='page-breaker'></div>
-        <div class='home-media'><span>Other Projects / Achievements / Roles</span></div>
-        <div class='work-outer'>
-          <div class='work-item'>
-            <div class='home-media'><span>From 2014</span></div>
-            <div class='work-title' onclick='changePage("https://www.youtube.com/channel/UCNyoJQcV6NCHiRCeqcCxJag")'><span>wwsalmon YouTube channel</span></div>
-            <div class='work-role'><span>Video Producer</span></div>
-          </div>
-          <div class='work-item'>
-            <div class='home-media'><span>2014 - 2017</span></div>
-            <div class='work-title'>
-              <span>Leadership at CSS</span>
-              <div class='work-hover'><span>In Full Print Resume</span></div>
-            </div>
-            <div class='work-role'><span>Various Roles</span></div>
-          </div>
-          <div class='work-item'>
-            <div class='home-media'><span>From 2017</span></div>
-            <div class='work-title'>
-              <span>Placement Over Power Esports</span>
-              <div class='work-hover'><span>Coming Soon</span></div>
-            </div>
-            <div class='work-role'><span>Leadership, Graphic Designer</span></div>
-          </div>
-        </div>
-        <div class='page-breaker'></div>
-        <div class='home-media'>
-          <span onclick='changePage("../index.html")' style='cursor: pointer;'><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back home</span>
-          <span> / <a href='https://twitter.com/wwsalmon'>twitter</a> / <a href='https://www.instagram.com/samsonzhangthesalmon/'>instagram</a> / <a href='https://www.youtube.com/samsonzhangthesalmon'>youtube</a></span>
-        </div>
-        <div class='home-text'><span>Ready to work with me? Contact me at <a class='link' href='mailto:samsonzhang@wwsalmon.com'>samsonzhang@wwsalmon.com</a> or social media.</span></div>
-        <div class='page-breaker'></div>
-      </div>
-    </div>
-    <div class='page-outer page-footer'>
-      <div class='page-inner'>
-        <div class='home-media' style='opacity:0.4;'><span>© Samson Zhang 2017<br/>Made with </span><span style='color: red;'>❤</span><span> in New York, NY</span></div>
-      </div>
-    </div>
-    <script>
-    function changePage(moveTo){
-      if (moveTo == "index.html" || moveTo == "about.html"){
-        $(".page-outer").css({"margin-left": "-240px", "transition": "all 0.6s ease"});
-      }
-      else{
-        $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
-      }
-      $(".page-inner, .projects-container").css({"opacity": "0", "transition": "opacity 0.6s ease"});
 
-      setTimeout(function() {
-         window.location.href = moveTo;
-      }, 600);
-    }
-    </script>
+    <div class='container'>
+
+      <div class='content-container'>
+        <div class='content-container-inner page'>
+
+          <div class='small-head'><span>My Story</span></div>
+
+          <img class='profile' src='profile.jpg'/>
+
+          <div class='hero-text' style='margin-top: 32px;'><span>Five years ago, my friends and I sawed an old apple crate in half, attached it to the legs of an old telescope, and made a tripod for my old iPad.</span></div>
+
+          <p>My name is Samson Zhang. I live in New York City and am an eleventh grader at Phillips Academy in Andover, MA.</p>
+
+          <p>I love storytelling, especially through film and video. I've worked on all kinds of projects, from 30-second shorts to 30-minute documentaries, including narrative shorts, music videos, YouTube videos, and promotional campaign videos.</p>
+
+          <p>My philosophy is "do to learn, not learn to do." I'm constantly experimenting and learning new things. Other than filmmaking and photography, I love UI/UX design, web design and development, running, cycling, playing piano, geeking out about tech, and Rocket League.</p>
+
+          <p>Here's a <a href='szhang-resume.pdf'>resume of my skills and the things I've done</a>.</p>
+
+          <div class='small-head'><span>Weapons of choice</span></div>
+
+          <img class='cat-img' src='a6500.png'/>
+
+          <p><b>Camera:</b> Sony A6500, <b>Lens:</b> Sony 35mm f/1.8</p>
+
+          <p>My only proper camera and its single lens. The A6500 delivers 4K30 and 1080P120 video from a sizeable APS-C sensor for good detail and low light, and really nice depth of field paired with the f/1.8 lens.</p>
+
+          <img class='cat-img' src='pixel2.png'/>
+
+          <p><b>Phone:</b> Google Pixel 2 XL</p>
+
+          <p>Pure Android, best-in-class camera, gorgeous design. Love this little slab of metal.</p>
+
+          <img class='cat-img' src='desktop.png'/>
+
+          <p><b>Editing Computer:</b> Custom build / Adobe CC Suite</p>
+
+          <p>i5-5600, GTX1060 build in a Corsair Carbide 240 case. LG 27" 4K main monitor, Dell 25" 1440P secondary monitor. Coolermaster QuickFire Rapid keyboard, Logitech MX Master mouse, Bose Soundlink Mini 2 speaker.</p>
+
+          <p>A full, pretty overkill setup to churn through everything I need and more.</p>
+
+        </div>
+      </div>
+    </div>
+    <script src='../menu.js'></script>
+    <script>buildMenu("page","about");</script>
   </body>
 </html>

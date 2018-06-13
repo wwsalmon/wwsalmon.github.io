@@ -1,30 +1,61 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-    <style>body{visibility: hidden;}</style> <!--hide body until main stylesheet loads-->
-    <script src='../header.js'></script>
-    <meta http-equiv="refresh" content="0.5; url=http://wwsalmon.com/webtest/andover/index.html">
-    <title>Coming Soon | Samson Zhang, Freelance Creative</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densityDpi=device-dpi' name='viewport'/>
+    <link rel="shortcut icon" href="../logo.png" />
+    <link rel='stylesheet' type='text/css' href='../style.css'/>
+    <link rel='stylesheet' type='text/css' href='../sidebar.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i|Roboto" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <title>Andover Admissions | Samson Zhang, filmmaker</title>
   </head>
   <body>
-    <div class='page-outer page-home floaton-left'>
-      <div class='page-inner'>
-        <div class='home-media home-media-click'><span onclick='changePage("../index.html")'><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back home</span></div>
-        <h1>Case Study: Andover (Video)</h1>
-        <p>This page is coming soon. In the meantime, check out my <a class='link' href='../index.html'>other projects</a>.</p>
+    <div class='container'>
+      <div class='content-container'>
+        <div class='content-container-inner page'>
+
+          <div class='small-head'><span>Video Case Study</span></div>
+
+          <h1>Phillips Academy Admissions (2018)</h1>
+
+          <div class='head-p'><span>A series of 2-minute long mini-videos sent to all newly admitted students promoting Andover and the #SayYesToAndover campaign.</span></div>
+
+          <div class='video-container'><iframe src='https://www.youtube.com/embed/bC0NVqqkSzM' frameborder='0' allowfullscreen></iframe></div>
+
+          <div class='video-container'><iframe src='https://www.youtube.com/embed/DkBIp9VR1ig' frameborder='0' allowfullscreen></iframe></div>
+
+          <div class='video-container'><iframe src='https://www.youtube.com/embed/INptL9hA9_U' frameborder='0' allowfullscreen></iframe></div>
+
+          <div class='video-container'><iframe src='https://www.youtube.com/embed/jeYHS-Pjg4M' frameborder='0' allowfullscreen></iframe></div>
+
+          <p>Phillips Academy is a prestigious private high school in Andover, MA. In winter 2017-18, I worked with the admissions office and fellow student Sophie Huang '20 to produce a set of five videos showcasing the math, science, art, and theater/dance departments, as well as one on student weekend life. These were sent out to all newly admitted students as a part of the 2018 #SayYesToAndover campaign.</p>
+
+          <p>My contribution:</p>
+
+          <ul>
+            <li>Edited 3 of 5 two-minute long academic department videos</li>
+            <li>Shot 4 of 7 interviews with faculty and students</li>
+            <li>Made motion graphics for all videos</li>
+            <li>Event coverage and classroom footage: ~60-70% of all footage used</li>
+          </ul>
+
+          <div class='small-head'><span>Gallery</span></div>
+
+          <img src='art-zemlin.jpg'></img>
+
+          <img src='science3.jpg'></img>
+
+          <img src='bts1.jpg'></img>
+
+          <img src='bts2.jpg'></img>
+
+          <div class='back small-head'><a href='../index.html'><span><i class="fas fa-long-arrow-alt-left"></i> Back Home</span></a></div>
+
+        </div>
       </div>
     </div>
-
-    <script>
-    function changePage(moveTo){
-      $(".page-outer").css({"top": "-64px", "transition": "all 0.6s ease"})
-      $(".page-section, .page-outer, .page-inner, .project-section").css({"opacity": "0", "transition": "all 0.6s ease"});
-
-      setTimeout(function() {
-         window.location.href = moveTo;
-      }, 600);
-    }
-    </script>
-
+    <script src='../menu.js'></script>
+    <script>buildMenu("page","none");</script>
   </body>
 </html>
