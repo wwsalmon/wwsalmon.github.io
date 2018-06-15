@@ -84,6 +84,23 @@ a{
    padding: 64px 0 32px 0;
  }
 
+ .home-tabs .small-head{
+   display: inline-block;
+   margin-right: 24px;
+   opacity: 0.2;
+   padding: 0;
+   cursor: pointer;
+   transition: all 0.05s ease;
+ }
+
+ .home-tabs .small-head:hover{
+   opacity: 0.4;
+ }
+
+ .home-tabs .small-head.selected{
+   opacity: 1.0;
+ }
+
 .content-container{
   width: 100%;
   padding-left: 264px;

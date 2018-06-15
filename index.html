@@ -28,10 +28,12 @@
           <div class='divider'></div>
 
           <!--DIVIDER-->
+          <div class='small-head home-tabs'>
+            <div class='small-head cat-video selected' onclick='changeTab("video")'><span>Video</span></div>
+            <div class='small-head cat-photo' onclick='changeTab("photo")'><span>Photo</span></div>
+          </div>
 
-          <div class='small-head'><span>Featured Video Projects</span></div>
-
-          <div class='projects'>
+          <div class='projects projects-video'>
 
             <div class='project-item'>
               <a href='andover/index.html'>
@@ -101,10 +103,54 @@
 
           </div>
 
+          <div class='projects projects-photo'>
+
+            <div class='project-item'>
+              <a href='andover-cycling/index.html'>
+                <img src='photo/cycling-cover.jpg'/>
+                <h2>Andover Cycling</h2>
+              </a>
+              <p>Phillips Academy Andover, 2018</p>
+            </div>
+
+            <div class='project-item'>
+              <a href='ragtime/index.html'>
+                <img src='photo/ragtime-cover.jpg'/>
+                <h2>Ragtime</h2>
+              </a>
+              <p>Phillips Academy Andover, 2018</p>
+            </div>
+
+            <div class='project-item'>
+              <a href='intheheights/index.html'>
+                <img src='photo/intheheights-cover.jpg'/>
+                <h2>In The Heights</h2>
+              </a>
+              <p>Columbia Secondary School, 2017</p>
+            </div>
+
+            <div class='project-item'>
+              <a href='columbiasecondary/index.html'>
+                <img src='photo/msgov-cover.jpg'/>
+                <h2>CSS Student Government</h2>
+              </a>
+              <p>Columbia Secondary School, 2015-17</p>
+            </div>
+
+            <div class='project-item'>
+              <a href='americansw/index.html'>
+                <img src='photo/americansw-cover.jpg'/>
+                <h2>American Southwest</h2>
+              </a>
+              <p>Personal, 2017</p>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
     <script src='menu.js'></script>
+    <script src='project-toggle.js'></script>
     <script>buildMenu("home","none");</script>
   </body>
 </html>
