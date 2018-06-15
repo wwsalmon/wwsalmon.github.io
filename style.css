@@ -93,8 +93,16 @@ a{
    transition: all 0.05s ease;
  }
 
+ .home-tabs .small-head.cat-design{
+   opacity: 0.4;
+ }
+
  .home-tabs .small-head:hover{
    opacity: 0.4;
+ }
+
+ .home-tabs .small-head.cat-design:hover{
+   opacity: 1.0;
  }
 
  .home-tabs .small-head.selected{
