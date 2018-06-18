@@ -84,6 +84,12 @@ a{
    padding: 64px 0 32px 0;
  }
 
+ .home-tabs{
+   display: flex;
+   flex-flow: row nowrap;
+   overflow-x: auto;
+ }
+
  .home-tabs .small-head{
    display: inline-block;
    margin-right: 24px;
@@ -91,22 +97,35 @@ a{
    padding: 0;
    cursor: pointer;
    transition: all 0.05s ease;
+   flex: auto 0 0;
  }
 
- .home-tabs .small-head.cat-design{
-   opacity: 0.4;
+ .home-tabs div.small-head:last-of-type{
+   padding-right: 32px;
+ }
+
+ .home-tabs .small-head.cat-design a{
+   color: unset;
+   transition: all 0.05s ease;
+ }
+
+ .home-tabs .small-head.cat-design a:hover{
+   color: #0085FF;
  }
 
  .home-tabs .small-head:hover{
    opacity: 0.4;
  }
 
- .home-tabs .small-head.cat-design:hover{
+ .home-tabs .small-head.selected{
    opacity: 1.0;
  }
 
- .home-tabs .small-head.selected{
-   opacity: 1.0;
+ .home-tabs .tab-divider{
+   opacity: 0.4;
+   padding: 0 8px;
+   font-weight: 400;
+   pointer-events: none;
  }
 
 .content-container{
@@ -170,6 +189,7 @@ a{
   width: 100%;
   margin-bottom: 8px;
   transition: all 0.4s ease;
+  border-radius: 4px;
 }
 
 .project-item img:hover{
@@ -240,7 +260,7 @@ a{
   }
 
   .hero-text{
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .page h1{
@@ -254,5 +274,10 @@ a{
   .page .video-container{
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+
+  .project-item{
+    padding-left: 0;
+    padding-right: 0;
   }
 }

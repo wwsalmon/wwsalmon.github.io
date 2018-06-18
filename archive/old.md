@@ -2,24 +2,17 @@
 
 # wwsalmon.com Archives
 
-Welcome to the wwsalmon.com archives. This website is a comprehensive documentation of the history of wwsalmon.com, the personal website of Samson Zhang, including links to live or preservations of every version and commentary.
+This part of the wwsalmon.github.io repo hosts a few previous versions of the website. The complete list with links is below.
 
-## All Links:
+- [0.3.2.HW - Hello World Specialized Portfolio (live, hosted on Blogger)](http://helloworld.wwsalmon.com)
+- [0.3.2.VD - Videoportfolio Specialized Portfolio (live)](http://wwsalmon.com/videoportfolio)
+- [0.3.3 - Specialized Project Pages, including a WIP videoportfolio](0-3-3/index.html)
+- [0.4.1 - Sidebar Design](0-4-1/index.html)
+- [0.4.2 - Hero Text + Staggered Squares](0-4-2/index.html)
+- [0.4.3 - Hero Paragraph + Staggered Squares](0-4-3/index.html)
+- [0.4.4 - aka Webtest. 0.4.3 with slight polishing and redesign.](0-4-4/index.html)
 
-### Live on original URL
-
-*   [0.3.2.HW - Hello World Specialized Portfolio (live, hosted on Blogger)](http://helloworld.wwsalmon.com)
-*   [0.3.2.VD - Videoportfolio Specialized Portfolio (live)](http://wwsalmon.com/videoportfolio)
-
-### Hosted on /archives
-
-*   [0.3.3 - Specialized Project Pages, including a WIP videoportfolio](0-3-3/index.html)
-*   [0.4.1 - Sidebar Design](0-4-1/index.html)
-*   [0.4.2 - Hero Text + Staggered Squares](0-4-2/index.html)
-*   [0.4.3 - Hero Paragraph + Staggered Squares](0-4-3/index.html)
-*   [0.4.4 - aka Webtest. 0.4.3 with slight polishing and redesign.](0-4-4/index.html)
-
-# A history of wwsalmon.com
+# A (mostly) complete history of wwsalmon.com
 
 ## 0.1 - Exploration
 

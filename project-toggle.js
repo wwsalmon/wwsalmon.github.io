@@ -1,18 +1,18 @@
 $(function(){
-  $(".projects-photo").hide();
+  $(".projects-photo").fadeOut();
 });
 
 function changeTab(category){
   if (category == "photo"){
     $(".cat-video").removeClass("selected");
     $(".cat-photo").addClass("selected");
-    $(".projects-video").hide(200);
-    $(".projects-photo").show(200);
+    $(".projects-video").fadeOut(100);
+    $(".projects-photo").fadeIn(200);
   }
   if (category == "video"){
     $(".cat-photo").removeClass("selected");
     $(".cat-video").addClass("selected");
-    $(".projects-photo").hide(200);
-    $(".projects-video").show(200);
+    $(".projects-photo").fadeOut(100);
+    $(".projects-video").fadeIn(200);
   }
 };

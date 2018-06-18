@@ -300,11 +300,6 @@ img.work-logo{
 
 /* PROJECTS */
 
-.projects-tabs-outer{
-  display: flex;
-  flex-flow: row nowrap;
-}
-
 .projects-tabs-outer input{
   display: none;
 }
