@@ -8,6 +8,7 @@ Welcome to the wwsalmon.com archives. This website is a comprehensive documentat
 
 ### Live on original URL
 
+*   [0.3.1 - Blogger Minimal Custom Website (live, hosted on Blogger)](http://archive.wwsalmon.com)
 *   [0.3.2.HW - Hello World Specialized Portfolio (live, hosted on Blogger)](http://helloworld.wwsalmon.com)
 *   [0.3.2.VD - Videoportfolio Specialized Portfolio (live)](http://wwsalmon.com/videoportfolio)
 
