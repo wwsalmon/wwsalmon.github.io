@@ -28,11 +28,18 @@
           <div class='divider'></div>
 
           <!--DIVIDER-->
-          <div class='small-head home-tabs'>
-            <div class='small-head cat-video selected' onclick='changeTab("video")'><span>Video</span></div>
-            <div class='small-head cat-photo' onclick='changeTab("photo")'><span>Photo</span></div>
+
+          <form class='small-head home-tabs'>
+
+            <input type='radio' name='home-tabs' id='cat-video' checked/>
+            <label class='small-head' for='cat-video'>Video</label>
+
+            <input type='radio' name='home-tabs' id='cat-photo'/>
+            <label class='small-head' for='cat-photo'>Photo</label>
+
             <div class='small-head cat-design'><span><a href='https://www.behance.net/wwsalmon' target="_blank"><i class="fab fa-behance" style='margin-right: 8px;'></i>Design</a></span></div>
-          </div>
+
+          </form>
 
           <div class='projects projects-video'>
 
@@ -105,6 +112,14 @@
           </div>
 
           <div class='projects projects-photo'>
+
+            <div class='project-item'>
+              <a href='marchforourlives/index.html'>
+                <img src='photo/marchforourlives-cover.jpg'/>
+                <h2>March For Our Lives</h2>
+              </a>
+              <p>Personal, 2018</p>
+            </div>
 
             <div class='project-item'>
               <a href='andover-cycling/index.html'>

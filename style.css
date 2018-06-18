@@ -91,6 +91,14 @@ a{
    overflow-x: auto;
  }
 
+ .home-tabs input{
+   display: none;
+ }
+
+ .home-tabs input[type="radio"]:checked+label{
+   opacity: 1.0;
+ }
+
  .home-tabs .small-head{
    display: inline-block;
    margin-right: 24px;
@@ -116,10 +124,6 @@ a{
 
  .home-tabs .small-head:hover{
    opacity: 0.4;
- }
-
- .home-tabs .small-head.selected{
-   opacity: 1.0;
  }
 
  .home-tabs .tab-divider{
