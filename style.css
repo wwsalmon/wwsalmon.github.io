@@ -39,7 +39,7 @@ a{
  }
 
  .page div.small-head:first-of-type{
-   padding-bottom: 16px;
+   margin-bottom: 16px;
  }
 
  .page img{
@@ -88,7 +88,7 @@ a{
    text-transform: uppercase;
    font-weight: 700;
    letter-spacing: 1px;
-   padding: 64px 0 32px 0;
+   margin: 84px 0 48px 0;
  }
 
  .home-tabs{
@@ -109,7 +109,8 @@ a{
    display: inline-block;
    margin-right: 24px;
    opacity: 0.2;
-   padding: 0;
+   margin-top: 0;
+   margin-bottom: 0;
    cursor: pointer;
    transition: all 0.05s ease;
    flex: auto 0 0;
@@ -233,16 +234,73 @@ a{
 
 .other-item{
   margin-top: 32px;
+  font-weight: 700;
 }
 
 .other-item + p{
   margin-top: 24px;
 }
 
+.footer{
+  padding-top: 32px;
+  border-top: 1px solid rgba(0,0,0,0.4);
+  margin-top: 128px;
+}
+
+.footer-text{
+  line-height: 1.4;
+}
+
+.footer-text div{
+  margin: 8px 0;
+}
+
+.footer img{
+  max-width: 160px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-links{
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: 700;
+  overflow-x: auto;
+}
+
+.footer-links div{
+  margin-right: 24px;
+  display: inline-block;
+  flex: auto 0 0;
+}
+
 @media (min-width: 620px){
   .project-item{
     flex-basis: 50%;
   }
+
+  .footer{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+  }
+
+  .footer-pic{
+    margin-right: 48px;
+  }
+
+  .footer img{
+    max-width: 256px;
+  }
+
+  .footer-text{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 960px){

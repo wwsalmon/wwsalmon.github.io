@@ -45,7 +45,7 @@
 }
 
 .nav-item{
-  margin: 6px 0;
+  margin: 4px 0;
   opacity: 0.4;
   font-weight: 600;
   transition: all 0.05s ease;
@@ -69,7 +69,7 @@
 }
 
 .sidebar-social{
-  padding-top: 48px;
+  padding-top: 42px;
   display: inline-flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -78,8 +78,8 @@
 .sidebar-social-item{
   text-align: center;
   width: 27px;
-  height: 48px;
-  line-height: 48px;
+  height: 42px;
+  line-height: 42px;
 }
 
 .sidebar-social-item a{
