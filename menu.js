@@ -31,7 +31,7 @@ function buildMenu(page,select){
     $(".page").append(
       `
       <div class='footer'>
-        <div class='footer-pic'><img src='../about/profile.jpg'/></div>
+        <div class='footer-pic'><img src='../about/profile2.jpg'/></div>
         <div class='footer-text'>
           <div><span>Hello! My name is <b>Samson Zhang</b>. I'm a filmmaker, photographer, and junior at Phillips Academy.</span></div>
           <div class='footer-links'>
