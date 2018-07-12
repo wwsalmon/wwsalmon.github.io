@@ -1,5 +1,7 @@
 $(function(){
-  $(".projects").fadeOut(0);
+  allProjects = $(".projects");
+  allTabs = $("label.small-head");
+  allProjects.fadeOut(0);
   changeTab()
 });
 
@@ -9,17 +11,18 @@ $(".home-tabs input").on('change', function(){
 
 function changeTab(){
   category = $(".home-tabs input[name=home-tabs]:checked").attr("id");
+
+  selectedProjects = $("." + category);
+  fadeProjects = allProjects.not(selectedProjects);
+
+  console.log(fadeProjects);
+
+  fadeProjects.fadeOut(100);
+  selectedProjects.fadeIn(200);
+
   console.log(category);
-  if (category == "cat-photo"){
-    $(".cat-video").removeClass("selected");
-    $(".cat-photo").addClass("selected");
-    $(".projects-video").fadeOut(100);
-    $(".projects-photo").fadeIn(200);
-  }
-  if (category == "cat-video"){
-    $(".cat-photo").removeClass("selected");
-    $(".cat-video").addClass("selected");
-    $(".projects-photo").fadeOut(100);
-    $(".projects-video").fadeIn(200);
-  }
+
+  allTabs.removeClass("selected");
+  selectedTab = $("label.small-head[for='" + category + "']");
+  selectedTab.addClass("selected");
 };

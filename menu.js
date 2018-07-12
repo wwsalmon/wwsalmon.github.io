@@ -27,18 +27,25 @@ function buildMenu(page,select){
       `
     );
 
+    $(".page").append(
+      `
+      <div class='back small-head'><a href='../index.html'><span><i class="fas fa-long-arrow-alt-left"></i> Back Home</span></a></div>
+      `
+    )
+
     if (select != "about")
     $(".page").append(
       `
+      <div class='divider'></div>
       <div class='footer'>
         <div class='footer-pic'><img src='../about/profile2.jpg'/></div>
         <div class='footer-text'>
           <div><span>Hello! My name is <b>Samson Zhang</b>. I'm a filmmaker, photographer, and junior at Phillips Academy.</span></div>
           <div class='footer-links'>
-            <div><span><a href='../about/index.html'>About</a></span></div>
-            <div><span><a href='../contact/index.html'>Say Hi</a></span></div>
-            <div><span><a href='../szhang-resume.pdf'>Resume</a></span></div>
-            <div><span><a href='../index.html#other'>Other</a></span></div>
+            <div class='nav-item'><span><a href='../index.html'>Home</a></span></div>
+            <div class='nav-item'><span><a href='../about/index.html'>About</a></span></div>
+            <div class='nav-item'><span><a href='../szhang-resume.pdf'>Resume</a></span></div>
+            <div class='nav-item'><span><a href='../contact/index.html'>Contact</a></span></div>
           </div>
         </div>
       </div>
