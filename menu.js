@@ -1,4 +1,11 @@
 function buildMenu(page,select){
+  $(".content-container").append(
+    `
+    <div class='footer'>
+      <p>Opinions, work, and content are my own unless otherwise stated.<br/>© Samson Zhang 2018</p>
+    </div>
+    `
+  );
   if (page == "home"){
     $(".container").prepend(
       `
@@ -36,19 +43,6 @@ function buildMenu(page,select){
     if (select != "about")
     $(".page").append(
       `
-      <div class='divider'></div>
-      <div class='footer'>
-        <div class='footer-pic'><img src='../about/profile2.jpg'/></div>
-        <div class='footer-text'>
-          <div><span>Hello! My name is <b>Samson Zhang</b>. I'm a filmmaker, photographer, and junior at Phillips Academy.</span></div>
-          <div class='footer-links'>
-            <div class='nav-item'><span><a href='../index.html'>Home</a></span></div>
-            <div class='nav-item'><span><a href='../about/index.html'>About</a></span></div>
-            <div class='nav-item'><span><a href='../szhang-resume.pdf'>Resume</a></span></div>
-            <div class='nav-item'><span><a href='../contact/index.html'>Contact</a></span></div>
-          </div>
-        </div>
-      </div>
       `
     )
   }
