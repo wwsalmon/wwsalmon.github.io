@@ -189,6 +189,7 @@ a{
   width: 100%;
   padding-bottom: 56.25%;
   position: relative;
+  background-color: #222;
 }
 
 .video-container iframe{
@@ -246,12 +247,17 @@ a{
 }
 
 .other-item{
-  margin-top: 32px;
+  margin-top: 48px;
   font-weight: 700;
 }
 
+div.other-item:not(:first-of-type){
+  padding-top: 48px;
+  border-top: 1px solid rgba(0,0,0,0.4);
+}
+
 .other-item + p{
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 .page .divider{
@@ -288,6 +294,10 @@ a{
 }
 
 @media (min-width: 620px){
+  .small-head{
+    font-size: 28px;
+  }
+
   .project-item{
     flex-basis: 50%;
   }
