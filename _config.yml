@@ -1,0 +1,32 @@
+title: Samson Zhang
+email: samsonzhang@wwsalmon.com
+description: The portfolio and personal website of Samson Zhang, filmmaker, photographer, designer, and developer, among other things. Currently a student at Phillips Academy, class of 2020.
+baseurl: ""
+url: "https://szhang-dev.netlify.com/"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  portfolio:
+    output: true
+
+twitter:
+  username: wwsalmon
+  card: summary
+
+logo: favicon.png
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

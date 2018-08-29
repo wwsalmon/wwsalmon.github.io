@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+    <div class='content-container-inner'>
+
+      <div class='home-prof'><img src='{{ site.baseurl }}/img/about/profile.jpg'></img></div>
+
+      <p class='hero-text'>Hello! I'm <b>Samson Zhang</b>. I'm a junior at Phillips Academy. Welcome to my portfolio!</p>
+
+      <div class='divider'></div>
+
+      <!--DIVIDER-->
+
+      <form class='small-head home-tabs'>
+
+        <input type='radio' name='home-tabs' id='cat-video' checked/>
+        <label class='small-head' for='cat-video'>Video</label>
+
+        <input type='radio' name='home-tabs' id='cat-eng'/>
+        <label class='small-head' for='cat-eng'>Things I've Made</label>
+
+        <input type='radio' name='home-tabs' id='cat-photo'/>
+        <label class='small-head' for='cat-photo'>Photo</label>
+
+        <div class='small-head label-design'><span><a href='https://www.behance.net/wwsalmon' target="_blank"><i class="fab fa-behance" style='margin-right: 8px;'></i>Design</a></span></div>
+
+      </form>
+
+      <div class='projects cat-video'>
+
+        <div class='project-item home-reel'>
+          <div class='video-container'><iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/WplYyJehtOw?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+
+        {% include project-gen.html topStrip="video case study" %}
+
+      </div>
+
+      <div class='projects cat-photo'>
+
+        {% include project-gen.html topStrip="photo gallery" %}
+
+      </div>
+
+      <div class='projects cat-eng'>
+
+        {% for project in site.portfolio %}
+
+          {% if project.cat == "eng" %}
+
+          <div class='project-item'>
+            <a href='{{ project.permalink }}'>
+              <img src='{{ site.baseurl }}/img/thumb/{{ project.permalink }}{% if project.img-ext %}.{{ project.img-ext }}{% else %}.jpg{% endif %}'>
+              <h2>{{ project.title }}</h2>
+            </a>
+            <p>{{ project.type }}, {{ project.timeframe }}</p>
+          </div>
+
+          {% endif %}
+
+        {% endfor %}
+
+
+      </div>
+
+    </div>
+
+  <script src='{{ site.baseurl }}/js/project-toggle.js'></script>

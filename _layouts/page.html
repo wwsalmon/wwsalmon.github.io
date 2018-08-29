@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<div class='content-container-inner page'>
+
+  <div class='small-head'><span>{{ page.topStrip }}</span></div>
+
+  <h1>{{ page.displayTitle }}</h1>
+
+  <div class='head-p'><span>{{ page.description }}</span></div>
+
+  {% if page.photos %}
+  {% include slider-gen.html data=page.photos %}
+  {% else %}
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.see-also %}
+  {% include artlink.html data=page.see-also %}
+  {% endif %}
+
+  <div class='back small-head'><a href='/'><span><i class="fas fa-long-arrow-alt-left"></i> Back Home</span></a></div>
+
+</div>

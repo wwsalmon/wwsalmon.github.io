@@ -1,0 +1,21 @@
+<div class='about-positions'>
+
+  <h3 class='small-head'>2018-19</h3>
+
+  {% for item in site.data.positions.year2018 %}
+    {% include position-gen.html data=item %}
+  {% endfor %}
+
+  <h3 class='small-head'>2017-18</h3>
+
+  {% for item in site.data.positions.year2017 %}
+    {% include position-gen.html data=item %}
+  {% endfor %}
+
+  <h3 class='small-head'>2016-17</h3>
+
+  {% for item in site.data.positions.year2016 %}
+    {% include position-gen.html data=item %}
+  {% endfor %}
+
+</div>
