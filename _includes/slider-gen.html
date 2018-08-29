@@ -16,15 +16,11 @@
     <div class='slider-load-text'><span>Loading Images</span></div>
   </div>
   <div class='slider-main'>
-    {% for img in include.data %}
-    <img class='slider-img' src='img/{% if isVid %}video{% elsif isEng %}eng{% else %}photo{% endif %}/{{ page.permalink }}/{{ img }}{% if custExt %}{% else %}.jpg{% endif %}'>
-    {% endfor %}
+    {% include slider-gen-inner.html data=include.data class='slider-img' %}
   </div>
   <div class='slider-selector-container'>
     <div class='slider-selector'>
-      {% for img in include.data %}
-      <img class='slider-select' src='img/{% if isVid %}video{% elsif isEng %}eng{% else %}photo{% endif %}/{{ page.permalink }}/{{ img }}{% if custExt %}{% else %}.jpg{% endif %}'>
-      {% endfor %}
+      {% include slider-gen-inner.html data=include.data class='slider-select' %}
     </div>
   </div>
 </div>

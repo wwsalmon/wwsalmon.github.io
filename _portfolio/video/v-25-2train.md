@@ -18,17 +18,17 @@ slider-custom-extensions: true
 
 slider-cine:
   - cine2.jpg
-  - cine1.gif
+  - cine1.mp4
   - cine6.jpg
   - cine4.jpg
   - cine5.jpg
   - cine3.jpg
 
 slider-mograph:
-  - motion5.gif
-  - motion1.gif
-  - motion2.gif
-  - motion4.gif
+  - motion5.mp4
+  - motion1.mp4
+  - motion2.mp4
+  - motion4.mp4
 ---
 
 {% include image-gen.html src='/img/video/2train/2train-wide.jpg' alt='2train team picture taken at Yankee Staduim' %}
@@ -53,4 +53,3 @@ This case study showcases some of the video and motion graphics work that I did 
 ## Motion Graphics
 
 {% include slider-gen.html data=page.slider-mograph %}
-

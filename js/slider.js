@@ -3,48 +3,62 @@ var animTime = 200;
 $(".slider").each(function(){
   var container = $(this);
 
+  if (container.has('video').length){
+    console.log("test");
+    var videos = container.find("video");
+    videos.oncanplay = function(){
+      container.imagesLoaded(function(){
+        setupSlides(container);
+      });
+    }
+  }
+
   container.imagesLoaded(function(){
-    var slides = container.find(".slider-img");
-    var sliderMain = container.find(".slider-main");
-    var slideHeights = [];
-
-    slides.each(function(){
-      slideHeights.push($(this).height());
-      $(this).addClass("maxHeight");
-    });
-
-    maxHeight = Math.max.apply(null,slideHeights);
-
-    sliderMain.css("height",maxHeight);
-
-    sliderMain.append(`
-      <div class='slider-nav slider-prev'>&lt;</div>
-      <div class='slider-nav slider-next'>&gt;</div>
-    `)
-
-    var sliderNext = container.find(".slider-next");
-    var sliderPrev = container.find(".slider-prev");
-    var sliderSelect = container.find(".slider-select");
-
-    container.data("slide",0);
-    slides.fadeOut(animTime);
-    changeSlide(0,container);
-
-    sliderNext.click(function(){
-      changeSlide(1, $(this));
-    });
-
-    sliderPrev.click(function(){
-      changeSlide(-1, $(this));
-    });
-
-    sliderSelect.click(function(){
-      goToSlide($(this).index(), $(this));
-    });
+    setupSlides(container);
   });
 });
 
+function setupSlides(container){
+  var slides = container.find(".slider-img");
+  var sliderMain = container.find(".slider-main");
+  var slideHeights = [];
 
+  slides.each(function(){
+    slideHeights.push($(this).height());
+    $(this).addClass("maxHeight");
+  });
+
+  console.log(slideHeights);
+
+  maxHeight = Math.max.apply(null,slideHeights);
+
+  sliderMain.css("height",maxHeight);
+
+  sliderMain.append(`
+    <div class='slider-nav slider-prev'>&lt;</div>
+    <div class='slider-nav slider-next'>&gt;</div>
+  `)
+
+  var sliderNext = container.find(".slider-next");
+  var sliderPrev = container.find(".slider-prev");
+  var sliderSelect = container.find(".slider-select");
+
+  container.data("slide",0);
+  slides.fadeOut(animTime);
+  changeSlide(0,container);
+
+  sliderNext.click(function(){
+    changeSlide(1, $(this));
+  });
+
+  sliderPrev.click(function(){
+    changeSlide(-1, $(this));
+  });
+
+  sliderSelect.click(function(){
+    goToSlide($(this).index(), $(this));
+  });
+}
 
 function goToSlide(slideNum,el){
   var container = el.closest(".slider");

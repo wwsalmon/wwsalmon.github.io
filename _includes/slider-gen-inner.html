@@ -1,0 +1,40 @@
+{% for img in include.data %}
+  {% assign isMov = false %}
+  {% capture src %}
+    img/
+
+    {% if isVid %}video
+    {% elsif isEng %}eng
+    {% else %}photo
+    {% endif %}
+
+    /{{ page.permalink }}/{{ img }}
+
+    {% if custExt %}
+    {% else %}.jpg
+    {% endif %}
+
+  {% endcapture %}
+
+  {% assign srcFix1 = src | remove: " " %}
+
+  {% assign srcFix2 = srcFix1 | strip_newlines %}
+
+  {% assign srcFix3 = srcFix2 | strip %}
+
+  {% if custExt %}
+
+    {% assign allExt = srcFix3 | split: "." %}
+
+    {% if allExt.last == 'mp4' %}
+      {% assign isMov = true %}
+    {% endif %}
+
+  {% endif %}
+
+  {% if isMov %}
+  <video class='{{ include.class }}' autoplay loop muted src='{{ srcFix3 }}'></video>
+  {% else %}
+  <img class='{{ include.class }} {% if isMov %}mov{% endif %}' src='{{ srcFix3 }}'>
+  {% endif %}
+{% endfor %}
