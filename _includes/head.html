@@ -1,4 +1,8 @@
 <head>
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
   {% if jekyll.environment == 'stage' %}
   <meta name="robots" content="noindex">
   <title>
@@ -15,6 +19,7 @@
   {{ site.title }}
   </title>
   {% endif %}
+
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
   <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/x-icon" />
   <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/css/main.css'>
