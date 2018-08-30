@@ -77,6 +77,10 @@ function changeSlide(n,el){
 
   slides.eq(slide).fadeOut(animTime);
   selectors.eq(slide).removeClass("slide-selected");
+  if (selectors.eq(slide).is("video")){
+    var vid = selectors.eq(slide);
+    vid[0].play();
+  }
 
   slide += n;
   if (slide > slides.length - 1) {slide = 0;}
@@ -84,6 +88,10 @@ function changeSlide(n,el){
 
   slides.eq(slide).fadeIn(animTime);
   selectors.eq(slide).addClass("slide-selected");
+  if (selectors.eq(slide).is("video")){
+    var vid = selectors.eq(slide);
+    vid[0].pause();
+  }
 
   container.data("slide",slide);
 
