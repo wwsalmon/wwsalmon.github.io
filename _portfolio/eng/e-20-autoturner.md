@@ -38,6 +38,9 @@ slider-week-5:
 
 This is a project I just wrapped up this summer, and a full written case study is coming soon. In the meantime, you can find our final presentation and some images and videos below.
 
+{% include youtube-gen.html id='bW62-upWoQY' %}
+{% include youtube-gen.html id='yL24DlAJdYg' %}
+
 ## Final Presentation
 
 {% include iframe-gen.html src='https://docs.google.com/presentation/d/e/2PACX-1vSxnGo7KyZGgjd9Ebkt0QvnlwR0JM11AQVrWSBdM-LCoMhv_mkxb9UM54LCRuwJnsV2RVS2ZkptS9hs/embed?start=false&loop=false' %}
