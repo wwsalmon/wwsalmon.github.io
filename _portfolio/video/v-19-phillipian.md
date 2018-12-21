@@ -3,7 +3,7 @@ title: Phillipian Video
 layout: page
 permalink: phillipian
 
-type: Promotional Campaign
+type: News Videos / Leadership
 timeframe: 2018 - Ongoing
 
 displayTitle: Phillipian Video (2018-Ongoing)
