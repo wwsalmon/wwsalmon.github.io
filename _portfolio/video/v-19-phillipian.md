@@ -3,8 +3,8 @@ title: Phillipian Video
 layout: page
 permalink: phillipian
 
-type: News Videos / Leadership
-timeframe: 2018 - Ongoing
+type: Journalistic Filmmaking / Leadership
+timeframe: 2018-19
 
 displayTitle: Phillipian Video (2018-Ongoing)
 topStrip: video case study
